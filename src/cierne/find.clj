@@ -70,7 +70,7 @@
 
 (defn get-latest
   []
-  (flatten (for [n (range 10)]
+  (flatten (for [n (range 20)]
              (get-wanted-books n))))
 
 
