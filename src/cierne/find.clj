@@ -5,7 +5,8 @@
 (def url "http://www.ciernenabielom.sk/uvod/strana-")
 
 
-(def wanted-authors #{"andruchovyč" "andrejev"
+(def wanted-authors #{"andruchovyč"
+                      "andrejev"
                       "alighieri"                           ;bozska komedia
                       "belyj"                               ;peterburg
                       "beckett"                             ;molloy
@@ -24,11 +25,11 @@
                       "kiš"                                 ;encyklopedia mrtvych, hrobka borisa davidovica
                       "lasica"
                       "márai"
-                      "mlynárik"
+                      "marquez"
                       "mitana"
                       "morante"                             ;pribeh v dejinach
                       "musil"                               ;muz bez  vlastnosti
-                      "nabokov"                             ;pozvanie na popravu, prednasky o ruskej literature, lolita
+                      "nabokov"                             ;pozvanie na popravu, lolita
                       "pecka"
                       "pišťanek"
                       "platonov"                            ;cevengur
@@ -43,7 +44,8 @@
                       "staviarsky"
                       "šimečka"
                       "suk"                                 ;Labyrintem revoluce
-                      "štrpka" "tatarka"
+                      "štrpka"
+                      "tatarka"
                       "tournier"                            ;kral tmy
                       "ulická"                              ;medea a jej deti
                       "vaculík"                             ;morcata

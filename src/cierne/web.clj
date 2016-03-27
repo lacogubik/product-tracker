@@ -10,7 +10,8 @@
             [ring.middleware.basic-authentication :as basic]
             [cemerick.drawbridge :as drawbridge]
             [environ.core :refer [env]]
-            [cierne.find :refer [find-wanted]]))
+            [cierne.find :refer [find-wanted]]
+            [cierne.mail :refer [send-email]]))
 
 (defn- authenticated? [user pass]
   ;; TODO: heroku config:add REPL_USER=[...] REPL_PASSWORD=[...]

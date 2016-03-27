@@ -51,7 +51,9 @@
     <orderEntry type="library" name="Leiningen: org.eclipse.jetty/jetty-io:7.6.8.v20121106" level="project" />
     <orderEntry type="library" name="Leiningen: org.eclipse.jetty/jetty-server:7.6.8.v20121106" level="project" />
     <orderEntry type="library" name="Leiningen: org.eclipse.jetty/jetty-util:7.6.8.v20121106" level="project" />
+    <orderEntry type="library" name="Leiningen: org.jsoup/jsoup:1.8.3" level="project" />
     <orderEntry type="library" name="Leiningen: org.tcrawley/dynapath:0.2.3" level="project" />
+    <orderEntry type="library" name="Leiningen: reaver:0.1.2" level="project" />
     <orderEntry type="library" name="Leiningen: ring-basic-authentication:1.0.5" level="project" />
     <orderEntry type="library" name="Leiningen: ring/ring-codec:1.0.0" level="project" />
     <orderEntry type="library" name="Leiningen: ring/ring-core:1.2.2" level="project" />
