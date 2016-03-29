@@ -1,8 +1,10 @@
 (ns cierne.find
   (:require [reaver :refer [parse extract-from text attr edn]]
-            [clojure.string :as string]))
+            [clojure.string :as string]
+            [cierne.db :as db]))
 
 (def url "http://www.ciernenabielom.sk/uvod/strana-")
+(def page-batch 2)
 
 
 (def wanted-authors #{"andruchovyč"
@@ -40,7 +42,7 @@
                       "sartre"                              ;hnus a ine
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
-                      "solženicyn"                          ;prvy kruh, polostrovie gulag
+                      "solženicyn"                          ;prvy kruh, polostrov gulag
                       "staviarsky"
                       "šimečka"
                       "suk"                                 ;Labyrintem revoluce
@@ -52,7 +54,13 @@
                       "vilikovský"
                       })
 
+(def stop-processing?* (atom false))
 
+
+(defn pprint-map->
+  [m]
+  (clojure.pprint/pprint m)
+  m)
 
 (defn get-book-data
   [n]
@@ -67,19 +75,38 @@
   (let [data (get-book-data n)]
     (->>
       data
-      (map #(assoc % :author (second (:author %)))))))
+      (map #(assoc % :author (second (:author %))))
+      pprint-map->)))
 
 
 (defn get-latest
   []
-  (flatten (for [n (range 20)]
+  (flatten (for [n (range page-batch)]
              (get-wanted-books n))))
+
+(defn filter-old-books
+  [last-item filtered-items item]
+  ;(println "Filter:" last-item filtered-items item @stop-processing?*)
+  (if (or @stop-processing?* (= (:url last-item) (:url item)))
+    (do
+      (reset! stop-processing?* true)
+      filtered-items)
+    (conj filtered-items item)))
+
+(defn get-last-batch
+  [last-item new-col]
+  (reset! stop-processing?* false)
+  (reduce (partial filter-old-books last-item) '() new-col))
 
 
 (defn find-wanted
   []
-  (->> (get-latest)
-       (filter #(contains? wanted-authors (-> (:author %)
-                                              (string/split #" ")
-                                              first
-                                              string/lower-case)))))
+  (let [recent-books (get-latest)
+        latest-books (get-last-batch (db/get-data) recent-books)]
+    (print "[latest-books]:")
+    (clojure.pprint/pprint latest-books)
+    (db/store-data (first recent-books))
+    (filter #(contains? wanted-authors (-> (:author %)
+                                           (string/split #" ")
+                                           first
+                                           string/lower-case)) latest-books)))

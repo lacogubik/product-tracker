@@ -28,7 +28,7 @@
   (GET "/" []
        {:status 200
         :headers {"Content-Type" "text/plain"}
-        :body (pr-str (find-wanted))})
+        :body (pr-str (send-email (find-wanted)))})
   (ANY "*" []
        (route/not-found (slurp (io/resource "404.html")))))
 
