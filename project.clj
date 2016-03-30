@@ -18,5 +18,6 @@
   :plugins [[environ/environ.lein "0.2.1"]]
   :hooks [environ.leiningen.hooks]
   :main cierne.web
+  :local-repo ~(System/getenv "M2_REPO")
   :uberjar-name "cierne-standalone.jar"
   :profiles {:production {:env {:production true}}})
