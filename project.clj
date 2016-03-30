@@ -17,5 +17,6 @@
   :min-lein-version "2.0.0"
   :plugins [[environ/environ.lein "0.2.1"]]
   :hooks [environ.leiningen.hooks]
+  :main cierne.web
   :uberjar-name "cierne-standalone.jar"
   :profiles {:production {:env {:production true}}})

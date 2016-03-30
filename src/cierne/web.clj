@@ -49,10 +49,8 @@
            trace/wrap-stacktrace))
         (site {:session {:store store}}))))
 
-(defn -main [& [port]]
-  (let [port (Integer. (or port (env :port) 5000))]
-    (jetty/run-jetty (wrap-app #'app) {:port port :join? false})))
 
-;; For interactive development:
-;; (.stop server)
-;; (def server (-main))
+(defn -main [& args]
+  (let [ip (get (System/getenv) "OPENSHIFT_CLOJURE_HTTP_IP" "0.0.0.0")
+        port (Integer/parseInt (get (System/getenv) "OPENSHIFT_CLOJURE_HTTP_PORT" "8080"))]
+    (jetty/run-jetty (wrap-app #'app) {:host ip :port port})))
