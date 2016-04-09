@@ -29,6 +29,7 @@
                       "hofstadter"                          ;Gödel, Escher, Bach. Existenciální gordická balada
                       "jančar"                              ;Drago, Kateřina, páv a jezuita
                       "jakubisko"                           ;Zive striebro
+                      "kadlečík"
                       "karous"                              ;Vetřelci a volavky
                       "krajňak"                             ;Carpathia
                       "kupka"                               ;Ruská moderna, Ruská avangarda
@@ -62,6 +63,7 @@
                       "staviarsky"                          ;Zachytka, Kale topanky, Clovek prijemny
                       "šimečka"
                       "štrpka"                              ;Rukojemnik
+                      "škvorecký"                           ;Příběh inženýra lidských duší, Zbabělci
                       "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu
                       "tournier"                            ;kral tmy/kral duchov,
                       "ulická"                              ;medea a jej deti

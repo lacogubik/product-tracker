@@ -8,5 +8,5 @@ pom.xml
 /.env
 /target
 .idea/
-/cierne.iml
 *.iml
+
