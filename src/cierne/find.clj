@@ -13,7 +13,7 @@
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
                       "belyj"                               ;peterburg
-                      "beckett"                             ;molloy, Prvá láska a iné prózy
+                      "beckett"                             ;molloy
                       "bellow"                              ;Sebrané povídky I. & II.
                       "bernanos"                            ;dennik vidieckeho knaza
                       "borges"                              ;spisy, cela kniznica
