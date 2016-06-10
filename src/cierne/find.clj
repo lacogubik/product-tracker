@@ -46,7 +46,7 @@
                       "morante"                             ;pribeh v dejinach
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
                       "musil"                               ;muz bez  vlastnosti
-                      "nabokov"                             ;pozvanie na popravu, lolita
+                      "nabokov"                             ;lolita
                       "pain"                                ;more love cajky
                       "pišťanek"
                       "platonov"                            ;cevengur
