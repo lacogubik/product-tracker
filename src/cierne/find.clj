@@ -26,7 +26,6 @@
                       "gombrowicz"                          ;kosmos, pornografia
                       "grečner"                             ;Film ako volny vers
                       "hesse"                               ;Stepný vlk, + ine
-                      "hofstadter"                          ;Gödel, Escher, Bach. Existenciální gordická balada
                       "jančar"                              ;Drago, Kateřina, páv a jezuita
                       "jakubisko"                           ;Zive striebro
                       "kadlečík"
