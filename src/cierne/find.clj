@@ -13,7 +13,6 @@
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
                       "belyj"                               ;peterburg
-                      "beckett"                             ;molloy
                       "bernanos"                            ;dennik vidieckeho knaza
                       "borges"                              ;spisy, cela kniznica
                       "canetti"                             ;zaslepeni
