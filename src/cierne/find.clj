@@ -14,7 +14,6 @@
                       "baláž"                               ;Posledná pevnosť
                       "belyj"                               ;peterburg
                       "beckett"                             ;molloy
-                      "bellow"                              ;Sebrané povídky I. & II.
                       "bernanos"                            ;dennik vidieckeho knaza
                       "borges"                              ;spisy, cela kniznica
                       "canetti"                             ;zaslepeni
@@ -67,7 +66,7 @@
                       "tournier"                            ;kral tmy/kral duchov,
                       "ulická"                              ;medea a jej deti
                       "vaculík"                             ;morcata, jsme v nebi
-                      "vilikovský"                          ;Vlastnty zivotopis zla, Pes na ceste, Letmy sneh, Prva a posledna laska
+                      "vilikovský"                          ;Pes na ceste, Letmy sneh, Prva a posledna laska
                       "werfel"                              ;Hvězda nenarozených, Barbora neboli zbožnost
                       })
 
