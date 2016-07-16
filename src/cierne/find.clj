@@ -63,7 +63,6 @@
                       "škvorecký"                           ;Příběh inženýra lidských duší, Zbabělci
                       "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu
                       "tournier"                            ;kral tmy/kral duchov,
-                      "ulická"                              ;medea a jej deti
                       "vaculík"                             ;morcata, jsme v nebi
                       "vilikovský"                          ;Pes na ceste, Letmy sneh, Prva a posledna laska
                       "werfel"                              ;Hvězda nenarozených, Barbora neboli zbožnost
