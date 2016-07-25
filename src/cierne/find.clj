@@ -18,7 +18,6 @@
                       "canetti"                             ;zaslepeni
                       "carpentier"                          ;stratene kroky
                       "cinger"                              ;Voskovec a Werich. Dialogy přes železnou oponu
-                      "dostojevskij"                        ;Bratia Karamazovci
                       "dušek"                               ;Melon sa vzdy smeje
                       "földvári"                            ;...až pod čiernu zem
                       "gombrowicz"                          ;kosmos, pornografia
@@ -32,7 +31,6 @@
                       "kupka"                               ;Ruská moderna, Ruská avangarda
                       "kameníček"
                       "kiš"                                 ;encyklopedia mrtvych, hrobka borisa davidovica
-                      "lasica"
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
@@ -50,7 +48,6 @@
                       "ragač"                               ;August 68
                       "rakús"                               ;Mačacia krajina
                       "rosová"                              ;Male vianoce
-                      "satinský"
                       "sabato"                              ;tunel samoty
                       "saramago"                            ;mesto slepych
                       "sartre"                              ;nevolnost, hnus a ine
