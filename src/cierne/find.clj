@@ -38,7 +38,6 @@
                       "marquez"
                       "mitana"                              ;Psie dni
                       "mojžiš"                              ;Voľným okom
-                      "morante"                             ;pribeh v dejinach
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
                       "musil"                               ;muz bez  vlastnosti
                       "nabokov"                             ;lolita
