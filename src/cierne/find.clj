@@ -39,7 +39,6 @@
                       "mitana"                              ;Psie dni
                       "mojžiš"                              ;Voľným okom
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
-                      "musil"                               ;muz bez  vlastnosti
                       "nabokov"                             ;lolita
                       "pain"                                ;more love cajky
                       "pišťanek"
