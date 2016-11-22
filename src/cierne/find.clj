@@ -55,7 +55,7 @@
                       "staviarsky"                          ;Zachytka, Kale topanky, Clovek prijemny
                       "šimečka"
                       "štrpka"                              ;Rukojemnik
-                      "škvorecký"                           ;Příběh inženýra lidských duší, Zbabělci
+                      "škvorecký"                           ;Příběh inženýra lidských duší
                       "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu
                       "tournier"                            ;kral tmy/kral duchov,
                       "vaculík"                             ;jsme v nebi
