@@ -9,20 +9,16 @@
 
 (def wanted-authors #{"andruchovyč"                         ;rekreacie, moskoviada atd
                       "alexijevičová"                       ;zinkovy chlapci, vojna nema zensku tvar, modlidba za cernobyl
-                      "andrejev"                            ;Propast a jine povidky, poviedka o siedmych obesenych
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
                       "belyj"                               ;peterburg
-                      "bernanos"                            ;dennik vidieckeho knaza
                       "borges"                              ;spisy, cela kniznica
                       "canetti"                             ;zaslepeni
                       "carpentier"                          ;stratene kroky
-                      "cinger"                              ;Voskovec a Werich. Dialogy přes železnou oponu
                       "dušek"                               ;Melon sa vzdy smeje
                       "földvári"                            ;...až pod čiernu zem
                       "gombrowicz"                          ;kosmos, pornografia
                       "grečner"                             ;Film ako volny vers
-                      "hesse"                               ;Stepný vlk, + ine
                       "jančar"                              ;Drago, Kateřina, páv a jezuita
                       "jakubisko"                           ;Zive striebro
                       "kadlečík"
@@ -34,8 +30,6 @@
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
-                      "márai"                               ;Spoveď mešťana
-                      "marquez"
                       "mitana"                              ;Psie dni
                       "mojžiš"                              ;Voľným okom
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
