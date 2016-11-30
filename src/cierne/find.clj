@@ -38,7 +38,6 @@
                       "pain"                                ;more love cajky
                       "pišťanek"
                       "platonov"                            ;cevengur
-                      "ragač"                               ;August 68
                       "rakús"                               ;Mačacia krajina
                       "rosová"                              ;Male vianoce
                       "sabato"                              ;tunel samoty
