@@ -25,6 +25,7 @@
                       "karous"                              ;Vetřelci a volavky
                       "krajňak"                             ;Carpathia
                       "kupka"                               ;Ruská moderna, Ruská avangarda
+                      "kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace
                       "kameníček"
                       "kiš"                                 ;encyklopedia mrtvych, hrobka borisa davidovica
                       "makine"                              ;Francuzky testament
