@@ -7,7 +7,7 @@
 (def page-batch 2)
 
 
-(def wanted-authors #{"andruchovyč"                         ;rekreacie, moskoviada atd
+(def wanted-authors #{"andruchovyč"                         ;rekreacie
                       "alexijevičová"                       ;zinkovy chlapci, vojna nema zensku tvar, modlidba za cernobyl
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
@@ -17,7 +17,6 @@
                       "carpentier"                          ;stratene kroky
                       "dušek"                               ;Melon sa vzdy smeje
                       "földvári"                            ;...až pod čiernu zem
-                      "gombrowicz"                          ;kosmos, pornografia
                       "grečner"                             ;Film ako volny vers
                       "jančar"                              ;Drago, Kateřina, páv a jezuita
                       "jakubisko"                           ;Zive striebro
@@ -27,14 +26,13 @@
                       "kupka"                               ;Ruská moderna, Ruská avangarda
                       "kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace
                       "kameníček"
-                      "kiš"                                 ;encyklopedia mrtvych, hrobka borisa davidovica
+                      "kiš"                                 ;hrobka borisa davidovica
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
                       "mitana"                              ;Psie dni
                       "mojžiš"                              ;Voľným okom
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
-                      "nabokov"                             ;lolita
                       "pain"                                ;more love cajky
                       "pišťanek"
                       "platonov"                            ;cevengur
@@ -49,7 +47,6 @@
                       "staviarsky"                          ;Zachytka, Kale topanky, Clovek prijemny
                       "šimečka"
                       "štrpka"                              ;Rukojemnik
-                      "škvorecký"                           ;Příběh inženýra lidských duší
                       "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu
                       "tournier"                            ;kral tmy/kral duchov,
                       "vaculík"                             ;jsme v nebi
