@@ -45,7 +45,7 @@
                       "sartre"                              ;nevolnost, hnus a ine
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
-                      "solženicyn"                          ;prvy kruh, polostrov gulag
+                      "solženicyn"                          ;polostrov gulag
                       "staviarsky"                          ;Zachytka, Kale topanky, Clovek prijemny
                       "šimečka"
                       "štrpka"                              ;Rukojemnik
