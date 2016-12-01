@@ -47,7 +47,7 @@
                       "staviarsky"                          ;Zachytka, Kale topanky, Clovek prijemny
                       "šimečka"
                       "štrpka"                              ;Rukojemnik
-                      "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu
+                      "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "tournier"                            ;kral tmy/kral duchov,
                       "vaculík"                             ;jsme v nebi
                       "vilikovský"                          ;Pes na ceste, Letmy sneh, Prva a posledna laska
