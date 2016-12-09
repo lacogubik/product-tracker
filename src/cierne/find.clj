@@ -40,7 +40,6 @@
                       "rosová"                              ;Male vianoce
                       "sabato"                              ;tunel samoty
                       "saramago"                            ;mesto slepych
-                      "sartre"                              ;nevolnost, hnus a ine
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
