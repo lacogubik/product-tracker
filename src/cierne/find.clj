@@ -16,7 +16,6 @@
                       "canetti"                             ;zaslepeni
                       "carpentier"                          ;stratene kroky
                       "dušek"                               ;Melon sa vzdy smeje
-                      "földvári"                            ;...až pod čiernu zem
                       "grečner"                             ;Film ako volny vers
                       "jančar"                              ;Drago, Kateřina, páv a jezuita
                       "jakubisko"                           ;Zive striebro
@@ -33,7 +32,6 @@
                       "mitana"                              ;Psie dni
                       "mojžiš"                              ;Voľným okom
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
-                      "pain"                                ;more love cajky
                       "pišťanek"
                       "platonov"                            ;cevengur
                       "rakús"                               ;Mačacia krajina
@@ -45,7 +43,6 @@
                       "solženicyn"                          ;polostrov gulag
                       "staviarsky"                          ;Zachytka, Kale topanky, Clovek prijemny
                       "šimečka"
-                      "štrpka"                              ;Rukojemnik
                       "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "tournier"                            ;kral tmy/kral duchov,
                       "vaculík"                             ;jsme v nebi
