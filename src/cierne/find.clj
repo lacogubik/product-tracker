@@ -43,7 +43,7 @@
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
                       "staviarsky"                          ;Zachytka, Kale topanky, Clovek prijemny
-                      "strugackij"                          ;Stalker, Je tazke byt bohom, ine
+                      "strugackij"                          ;Je tazke byt bohom, ine
                       "šimečka"
                       "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "vaculík"                             ;jsme v nebi
