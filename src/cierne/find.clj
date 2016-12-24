@@ -26,6 +26,7 @@
                       "kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace
                       "kameníček"
                       "kiš"                                 ;hrobka borisa davidovica
+                      "lem"                                 ;Solaris, a ine
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
@@ -42,6 +43,7 @@
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
                       "staviarsky"                          ;Zachytka, Kale topanky, Clovek prijemny
+                      "strugackij"                          ;Stalker, Je tazke byt bohom, ine
                       "šimečka"
                       "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "vaculík"                             ;jsme v nebi
