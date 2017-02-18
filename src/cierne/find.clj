@@ -15,6 +15,7 @@
                       "borges"                              ;spisy, cela kniznica
                       "canetti"                             ;zaslepeni
                       "carpentier"                          ;stratene kroky
+                      "cigánová"                            ;Aksal, Spaky v trni, Šampanské, káva, pivo
                       "dušek"                               ;Melon sa vzdy smeje
                       "grečner"                             ;Film ako volny vers
                       "jančar"                              ;Drago, Kateřina, páv a jezuita
@@ -45,6 +46,7 @@
                       "staviarsky"                          ;Zachytka, Kale topanky, Clovek prijemny
                       "strugackij"                          ;Je tazke byt bohom, ine
                       "šimečka"
+                      "tallián"                             ;Béla Bartók
                       "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "vaculík"                             ;jsme v nebi
                       "vilikovský"                          ;Pes na ceste, Letmy sneh, Prva a posledna laska
