@@ -11,7 +11,7 @@
             [cemerick.drawbridge :as drawbridge]
             [environ.core :refer [env]]
             [cierne.find :refer [find-wanted]]
-            [cierne.mail :refer [send-email]]))
+            [cierne.mail :refer [send-msg]]))
 
 (defn- authenticated? [user pass]
   ;; TODO: heroku config:add REPL_USER=[...] REPL_PASSWORD=[...]
@@ -26,9 +26,9 @@
   (ANY "/repl" {:as req}
        (drawbridge req))
   (GET "/" []
-       {:status 200
+    {:status 200
         :headers {"Content-Type" "text/plain"}
-        :body (pr-str (send-email (find-wanted)))})
+        :body (pr-str (send-msg (find-wanted)))})
   (ANY "*" []
        (route/not-found (slurp (io/resource "404.html")))))
 
