@@ -1,9 +1,12 @@
 (ns cierne.find
   (:require [reaver :refer [parse extract-from text attr edn]]
             [clojure.string :as string]
+            [taoensso.timbre :as log]
+            [schema.core :as s]
+            [cierne.schema :as sch]
             [cierne.db :as db]))
 
-(def url "http://www.ciernenabielom.sk/uvod/strana-")
+
 (def page-batch 2)
 
 
@@ -43,7 +46,7 @@
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
-                      "staviarsky"                          ;Zachytka, Kale topanky, Clovek prijemny
+                      "staviarsky"                          ;Zachytka, Clovek prijemny
                       "strugackij"                          ;Je tazke byt bohom, ine
                       "šimečka"
                       "tallián"                             ;Béla Bartók
@@ -61,44 +64,43 @@
   (clojure.pprint/pprint m)
   m)
 
-(defn get-book-data
-  [n]
-  (-> (str url (inc n) "/")
-      slurp
-      parse
-      (extract-from ".foot-line" [:name :author :url :img] "h2 a.nazov" text "h2 a" text "h2 a.nazov" (attr :href) ".foot-img-cont a" (attr :href))))
+(defmulti get-book-data (fn [k _] k))
 
-(defn get-wanted-books
-  [n]
-  (println "Fetching page " n)
-  (let [data (get-book-data n)]
-    (->>
-      data
-      (map #(assoc % :author (second (:author %))))
-      pprint-map->)))
+(defmethod get-book-data :cierne-na-bielom
+  [_ page-num]
+  (println "Fetching cierne " page-num)
+  (let [url "http://www.ciernenabielom.sk/uvod/strana-"]
+    (-> (str url (inc page-num) "/")
+        slurp
+        parse
+        (extract-from ".foot-line" [:title :author :url :img-url]
+                      "h2 a.nazov" text
+                      "h2 a" (fn [item]
+                               (-> item
+                                   text
+                                   second))
+                      "h2 a.nazov" (attr :href)
+                      ".foot-img-cont a" (attr :href)))))
+
+(defmethod get-book-data :antikvariatik
+  [_ page-num]
+  (let [base-url "http://www.antikvariatik.sk/"]
+    (-> (str base-url "?podstranka=novinky&zoradenie=&poradie=&start=" (* page-num 50))
+        slurp
+        parse
+        (extract-from ".index_obsah_vnutri_kniha" [:title :author :url :img-url]
+                      "h2.index_obsah_vnutri_kniha_nazov a" text
+                      "div.index_obsah_vnutri_kniha_autor a" text
+                      "h2.index_obsah_vnutri_kniha_nazov a" (fn [m]
+                                                              (->> (attr m :href)
+                                                                   (str base-url)))
+                      "div.index_obsah_vnutri_kniha_obrazok a img" (attr :src)))))
 
 
-;(defn contains-book?
-;  [last-book new-page]
-;  (reduce (fn [book-exists? book]
-;            (if (= (:url last-book) (:url book))
-;              true
-;              book-exists?)) new-page))
-;
-;(defn get-latest2
-;  []
-;  (let [last-book (db/get-data)]
-;    (loop [n 0
-;           pages '()]
-;      (let [new-page (get-wanted-books n)]
-;        (if (or (contains-book? last-book new-page) (> n page-batch))
-;          (conj pages new-page)
-;          (recur (inc n) (conj pages new-page)))))))
-
-(defn get-latest
-  []
+(s/defn get-latest :- [sch/Book]
+  [shop :- s/Keyword]
   (flatten (for [n (range page-batch)]
-             (get-wanted-books n))))
+             (get-book-data shop n))))
 
 (defn filter-old-books
   [last-item filtered-items item]
@@ -117,12 +119,17 @@
 
 (defn find-wanted
   []
-  (let [recent-books (get-latest)
-        latest-books (get-last-batch (db/get-data) recent-books)]
-    (print "[latest-books]:")
-    (clojure.pprint/pprint latest-books)
-    (db/store-data (first recent-books))
-    (filter #(contains? wanted-authors (-> (:author %)
-                                           (string/split #" ")
-                                           first
-                                           string/lower-case)) latest-books)))
+  (flatten (for [shop [:cierne-na-bielom :antikvariatik]]
+             (let [recent-books (get-latest shop)
+                   latest-books (get-last-batch
+                                  (db/get-data shop)
+                                  recent-books)]
+               (log/info "Latest books:")
+               (clojure.pprint/pprint latest-books)
+               (db/store-data shop (first recent-books))
+               (filter (fn [book]
+                         (when-let [author (:author book)]
+                           (contains? wanted-authors (-> author
+                                                         (string/split #" ")
+                                                         first
+                                                         string/lower-case)))) latest-books)))))

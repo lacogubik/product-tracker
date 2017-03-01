@@ -12,6 +12,8 @@
                  [com.cemerick/drawbridge "0.0.6"]
                  [reaver "0.1.2"]
                  [clj-http "2.1.0"]
+                 [prismatic/schema "1.1.3"]
+                 [com.taoensso/timbre "4.7.4"]
                  [hiccup "1.0.5"]
                  [cheshire "5.5.0"]]
   :min-lein-version "2.0.0"
