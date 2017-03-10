@@ -21,6 +21,7 @@
                       "cigánová"                            ;Aksal, Spaky v trni, Šampanské, káva, pivo
                       "dušek"                               ;Melon sa vzdy smeje
                       "grečner"                             ;Film ako volny vers
+                      "hesse"                               ;Cesta do orientu
                       "jančar"                              ;Drago, Kateřina, páv a jezuita
                       "jakubisko"                           ;Zive striebro
                       "kadlečík"
