@@ -10,7 +10,8 @@
 (def page-batch 2)
 
 
-(def wanted-authors #{"andruchovyč"                         ;rekreacie
+(def wanted-authors #{"albahari"                            ;Snežný človek a ine
+                      "andruchovyč"                         ;rekreacie
                       "alexijevičová"                       ;zinkovy chlapci, vojna nema zensku tvar, modlidba za cernobyl
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
@@ -39,6 +40,7 @@
                       "mojžiš"                              ;Voľným okom
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
                       "pišťanek"
+                      "pištalo"                             ;Tesla, portrét medzi maskami
                       "platonov"                            ;cevengur
                       "rakús"                               ;Mačacia krajina
                       "rosová"                              ;Male vianoce
@@ -53,6 +55,7 @@
                       "tallián"                             ;Béla Bartók
                       "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "vaculík"                             ;jsme v nebi
+                      "velikic"                             ;Severna stena, Vysetrovatel
                       "vilikovský"                          ;Pes na ceste, Letmy sneh, Prva a posledna laska
                       "werfel"                              ;Hvězda nenarozených, Barbora neboli zbožnost
                       })
