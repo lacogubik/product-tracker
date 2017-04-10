@@ -11,7 +11,11 @@
             [cemerick.drawbridge :as drawbridge]
             [environ.core :refer [env]]
             [cierne.find :refer [find-wanted]]
-            [cierne.mail :refer [send-msg]]))
+            [cierne.mail :refer [send-msg]]
+            [circleci.rollcage.core :as rollcage]))
+
+;;TODO set proper environemnt and switch to environ
+(def r (rollcage/client (env :rollbar-access-token) {:environment "production"}))
 
 (defn- authenticated? [user pass]
   ;; TODO: heroku config:add REPL_USER=[...] REPL_PASSWORD=[...]
@@ -40,10 +44,21 @@
             :headers {"Content-Type" "text/html"}
             :body (slurp (io/resource "500.html"))}))))
 
+(defn wrap-rollbar [handler]
+  (if-not r
+    handler
+    (fn [req]
+      (try
+        (handler req)
+        (catch Exception e
+          (rollcage/error r e (select-keys req [:uri]))
+          (throw e))))))
+
 (defn wrap-app [app]
   ;; TODO: heroku config:add SESSION_SECRET=$RANDOM_16_CHARS
   (let [store (cookie/cookie-store {:key (env :session-secret)})]
     (-> app
+        wrap-rollbar
         ((if (env :production)
            wrap-error-page
            trace/wrap-stacktrace))

@@ -15,7 +15,8 @@
                  [prismatic/schema "1.1.3"]
                  [com.taoensso/timbre "4.7.4"]
                  [hiccup "1.0.5"]
-                 [cheshire "5.5.0"]]
+                 [cheshire "5.5.0"]
+                 [circleci/rollcage "0.2.3"]]
   :min-lein-version "2.0.0"
   :plugins [[environ/environ.lein "0.2.1"]]
   :hooks [environ.leiningen.hooks]
