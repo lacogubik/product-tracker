@@ -111,10 +111,31 @@
       filtered-items)
     (conj filtered-items item)))
 
-(defn get-last-batch
-  [last-item new-col]
+(s/defn get-last-batch
+  [last-item :- sch/Book
+   new-col  :- [sch/Book]]
   (reset! stop-processing?* false)
   (reduce (partial filter-old-books last-item) '() new-col))
+
+(s/defn get-new-items
+  [last-processed-item :- sch/Book
+   shop :- s/Keyword]
+  (loop [page-num 0
+         tmp-books []]
+    (let [new-batch (get-book-data shop page-num)]
+      (println "new-batch" new-batch)
+      (let [res (reduce (fn [val item]
+                          (println "val:" val)
+                          (println "item:" item)
+                          (if (:found? val)
+                            val
+                            (if (= (:url last-processed-item) (:url item))
+                              (assoc val :found? true)
+                              (update-in val [:items] conj item)))) {:found? false :items []} new-batch)
+            tmp-books (into tmp-books (:items res))]
+        (if (:found? res)
+          tmp-books
+          (recur (inc page-num) tmp-books))))))
 
 
 (defn find-wanted
