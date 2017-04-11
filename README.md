@@ -1,6 +1,6 @@
 # Product tracker
 
-Deployed at http://cierne-cierne.rhcloud.com/
+Deployed at http://pt-laco.rhcloud.com/
 
 
 ## Usage
