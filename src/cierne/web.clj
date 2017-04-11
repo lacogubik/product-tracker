@@ -1,11 +1,9 @@
 (ns cierne.web
   (:require [compojure.core :refer [defroutes GET PUT POST DELETE ANY]]
-            [compojure.handler :refer [site]]
             [compojure.route :as route]
             [clojure.java.io :as io]
             [ring.middleware.stacktrace :as trace]
             [ring.middleware.session :as session]
-            [ring.middleware.session.cookie :as cookie]
             [ring.adapter.jetty :as jetty]
             [ring.middleware.basic-authentication :as basic]
             [cemerick.drawbridge :as drawbridge]
@@ -27,14 +25,14 @@
       (basic/wrap-basic-authentication authenticated?)))
 
 (defroutes app
-  (ANY "/repl" {:as req}
-       (drawbridge req))
-  (GET "/" []
-    {:status 200
-        :headers {"Content-Type" "text/plain"}
-        :body (pr-str (send-msg (find-wanted)))})
-  (ANY "*" []
-       (route/not-found (slurp (io/resource "404.html")))))
+           (ANY "/repl" {:as req}
+             (drawbridge req))
+           (GET "/" []
+             {:status  200
+              :headers {"Content-Type" "text/plain"}
+              :body    (pr-str (send-msg (find-wanted)))})
+           (ANY "*" []
+             (route/not-found (slurp (io/resource "404.html")))))
 
 (defn wrap-error-page [handler]
   (fn [req]
@@ -55,17 +53,16 @@
           (throw e))))))
 
 (defn wrap-app [app]
-  ;; TODO: heroku config:add SESSION_SECRET=$RANDOM_16_CHARS
-  (let [store (cookie/cookie-store {:key (env :session-secret)})]
-    (-> app
-        wrap-rollbar
-        ((if (env :production)
-           wrap-error-page
-           trace/wrap-stacktrace))
-        (site {:session {:store store}}))))
+  (-> app
+      wrap-rollbar
+      ((if (env :production)
+         wrap-error-page
+         trace/wrap-stacktrace))))
 
 
 (defn -main [& args]
-  (let [ip (get (System/getenv) "OPENSHIFT_CLOJURE_HTTP_IP" "0.0.0.0")
-        port (Integer/parseInt (get (System/getenv) "OPENSHIFT_CLOJURE_HTTP_PORT" "8080"))]
+  (let [ip (or (env :openshift-clojure-http-ip) "0.0.0.0")
+        port (-> (env :openshift-clojure-http-port)
+                 (or "8080")
+                 Integer/parseInt)]
     (jetty/run-jetty (wrap-app #'app) {:host ip :port port})))
