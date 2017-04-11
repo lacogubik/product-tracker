@@ -9,8 +9,8 @@
             [product-tracker.notification :as n]
             [circleci.rollcage.core :as rollcage]))
 
-(def r (rollcage/client (env :rollbar-access-token) {:environment (env :environment)
-                                                     :host (env :openshift-app-dns)}))
+(def r (rollcage/client (env :rollbar-access-token) {:environment (or (env :environment) "dev")
+                                                     :host        (env :openshift-app-dns)}))
 
 (defroutes app
            (GET "/" []
