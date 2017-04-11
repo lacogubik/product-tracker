@@ -16,7 +16,7 @@
 (s/defn store-data
   [shop :- s/Keyword
    data :- sch/Book]
-  (log/info "Storing shop:" shop " data:" data)
+  (log/info "Storing  shop:" shop " data:" data)
   (let [{:keys [body status] :as resp} (client/put (get-db-key shop)
                                           {:content-type :json
                                            :body         (generate-string data)})]
