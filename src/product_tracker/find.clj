@@ -1,10 +1,10 @@
-(ns cierne.find
+(ns product-tracker.find
   (:require [reaver :refer [parse extract-from text attr edn]]
             [clojure.string :as string]
             [taoensso.timbre :as log]
             [schema.core :as s]
-            [cierne.schema :as sch]
-            [cierne.db :as db]))
+            [product-tracker.schema :as sch]
+            [product-tracker.db :as db]))
 
 
 (def page-batch 2)

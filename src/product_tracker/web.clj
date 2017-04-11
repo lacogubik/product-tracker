@@ -1,12 +1,12 @@
-(ns cierne.web
+(ns product-tracker.web
   (:require [compojure.core :refer [defroutes GET PUT POST DELETE ANY]]
             [compojure.route :as route]
             [clojure.java.io :as io]
             [ring.middleware.stacktrace :as trace]
             [ring.adapter.jetty :as jetty]
             [environ.core :refer [env]]
-            [cierne.find :refer [find-wanted]]
-            [cierne.notification :as n]
+            [product-tracker.find :refer [find-wanted]]
+            [product-tracker.notification :as n]
             [circleci.rollcage.core :as rollcage]))
 
 (def r (rollcage/client (env :rollbar-access-token) {:environment (env :environment)

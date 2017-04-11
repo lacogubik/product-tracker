@@ -1,8 +1,8 @@
-(ns cierne.notification
+(ns product-tracker.notification
   (:require [clj-http.client :as client]
             [hiccup.core :refer [html]]
             [cheshire.core :refer [generate-string parse-string]]
-            [cierne.schema :as sch]
+            [product-tracker.schema :as sch]
             [schema.core :as s]
             [environ.core :refer [env]]))
 

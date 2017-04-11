@@ -1,9 +1,9 @@
-(ns cierne.db
+(ns product-tracker.db
   (:require [cheshire.core :refer [generate-string parse-string]]
             [clj-http.client :as client]
             [schema.core :as s]
             [taoensso.timbre :as log]
-            [cierne.schema :as sch]
+            [product-tracker.schema :as sch]
             [environ.core :refer [env]]))
 
 

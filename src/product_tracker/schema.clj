@@ -1,4 +1,4 @@
-(ns cierne.schema
+(ns product-tracker.schema
   (:require [schema.core :as s]))
 
 (s/defschema Book

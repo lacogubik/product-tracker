@@ -1,4 +1,4 @@
-# cierne
+# Product tracker
 
 Deployed at http://cierne-cierne.rhcloud.com/
 
@@ -12,6 +12,13 @@ To export required env vars from file run:
 You can run application using
 
     $ lein run
+
+
+
+#Openshift
+
+
+App log is at ``${OPENSHIFT_CLOJURE_DIR}/log/server.log`
 
 
 

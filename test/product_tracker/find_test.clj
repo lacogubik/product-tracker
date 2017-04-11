@@ -1,6 +1,6 @@
-(ns cierne.find-test
+(ns product-tracker.find-test
   (:require [clojure.test :refer :all]
-            [cierne.find :refer :all]))
+            [product-tracker.find :refer :all]))
 
 (def books '({:url "url-book-1"}
               {:url "url-book-2"}

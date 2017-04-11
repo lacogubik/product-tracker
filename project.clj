@@ -1,4 +1,4 @@
-(defproject cierne "1.0.0-SNAPSHOT"
+(defproject product-tracker "1.0.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://http://cierne-cierne.rhcloud.com/"
 
@@ -18,8 +18,8 @@
   :min-lein-version "2.0.0"
   :plugins [[environ/environ.lein "0.2.1"]]
   :hooks [environ.leiningen.hooks]
-  :main cierne.web
+  :main product-tracker.web
   :local-repo ~(System/getenv "M2_REPO")
-  :uberjar-name "cierne-standalone.jar"
+  :uberjar-name "product-tracker-standalone.jar"
 
   :profiles {:dev {:env {:environment "dev"}}})
