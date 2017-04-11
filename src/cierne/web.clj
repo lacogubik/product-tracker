@@ -3,34 +3,20 @@
             [compojure.route :as route]
             [clojure.java.io :as io]
             [ring.middleware.stacktrace :as trace]
-            [ring.middleware.session :as session]
             [ring.adapter.jetty :as jetty]
-            [ring.middleware.basic-authentication :as basic]
-            [cemerick.drawbridge :as drawbridge]
             [environ.core :refer [env]]
             [cierne.find :refer [find-wanted]]
-            [cierne.mail :refer [send-msg]]
+            [cierne.notification :as n]
             [circleci.rollcage.core :as rollcage]))
 
-;;TODO set proper environemnt and switch to environ
-(def r (rollcage/client (env :rollbar-access-token) {:environment "production"}))
-
-(defn- authenticated? [user pass]
-  ;; TODO: heroku config:add REPL_USER=[...] REPL_PASSWORD=[...]
-  (= [user pass] [(env :repl-user false) (env :repl-password false)]))
-
-(def ^:private drawbridge
-  (-> (drawbridge/ring-handler)
-      (session/wrap-session)
-      (basic/wrap-basic-authentication authenticated?)))
+(def r (rollcage/client (env :rollbar-access-token) {:environment (env :environment)
+                                                     :host (env :openshift-app-dns)}))
 
 (defroutes app
-           (ANY "/repl" {:as req}
-             (drawbridge req))
            (GET "/" []
              {:status  200
               :headers {"Content-Type" "text/plain"}
-              :body    (pr-str (send-msg (find-wanted)))})
+              :body    (pr-str (n/send-msg (find-wanted)))})
            (ANY "*" []
              (route/not-found (slurp (io/resource "404.html")))))
 
@@ -55,7 +41,7 @@
 (defn wrap-app [app]
   (-> app
       wrap-rollbar
-      ((if (env :production)
+      ((if (= "production" (env :environment))
          wrap-error-page
          trace/wrap-stacktrace))))
 
