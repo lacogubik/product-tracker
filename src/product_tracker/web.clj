@@ -17,6 +17,15 @@
              {:status  200
               :headers {"Content-Type" "text/plain"}
               :body    (pr-str (n/send-msg (find-wanted)))})
+           (GET "/article.html" []
+             {:status  200
+              :headers {"Content-Type" "text/html"}
+              :body    (slurp (io/resource "article.html"))})
+           (GET "/article.amp.html" []
+             {:status  200
+              :headers {"Content-Type" "text/html"}
+              :body    (slurp (io/resource "article.amp.html"))})
+
            (ANY "*" []
              (route/not-found (slurp (io/resource "404.html")))))
 

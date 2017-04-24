@@ -1,0 +1,315 @@
+<!-- ## Introduction -->
+
+<!-- This is a sample template for a news article in AMP. It demonstrates the usage of AMP components which works well in news articles. Examples include social sharing, image galleries, personalized content, ads, and more.  -->
+<!-- -->
+<!doctype html>
+<html amp>
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- ## Setup -->
+    <!--
+      All additionally used AMP components must be imported in the header.
+    -->
+    <script async custom-element="amp-social-share"
+            src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+    <!--<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>-->
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <!--<script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>-->
+    <!--<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>-->
+    <!--<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>-->
+    <!--<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>-->
+    <!--<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>-->
+
+    <link rel="canonical" href="http://pt-laco.rhcloud.com/article.html">
+
+    <!-- ## Metadata -->
+    <!-- The Top Stories carousel requires schema.org markup for one of the following types: Article, NewsArticle, BlogPosting, or VideoObject. [Learn more](https://developers.google.com/structured-data/carousels/top-stories#markup_specification).  -->
+    <script type="application/ld+json">
+{
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": "https://ampbyexample.com/samples_templates/news_article/",
+      "headline": "Lorem Ipsum",
+      "datePublished": "2016-04-21T11:55:02Z",
+      "dateModified": "2016-04-21T11:55:02Z",
+      "description": "A sample news article build with AMP.",
+      "author": {
+        "@type": "Person",
+        "name": "Sebastian Benz"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Google",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://cdn.ampproject.org/logo.jpg",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ampbyexample.com/img/landscape_lake_1280x857.jpg",
+        "height": 1280,
+        "width": 857
+      }
+    }
+
+    </script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @-moz-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @-ms-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @-o-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }</style>
+    <noscript>
+        <style amp-boilerplate>body {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none
+        }</style>
+    </noscript>
+    <style amp-custom>
+        main > p, main > div, main > h2, main > figure > figcaption {
+            padding: 1rem;
+        }
+
+        figure {
+            margin: 1rem 0;
+            padding: 0;
+        }
+
+        figure > figcaption {
+            padding: .5rem 1rem;
+        }
+
+        .amp-ad-container {
+            display: flex;
+        }
+
+        amp-ad {
+            margin: 0 auto;
+        }
+
+        .carousel .slide > amp-img > img {
+            object-fit: contain;
+        }
+
+        .heading {
+            padding-bottom: 8px;
+        }
+
+        .heading h1 {
+            font-size: 3rem;
+            line-height: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .heading > #summary {
+            font-weight: 500;
+        }
+
+        .heading > small {
+            color: #656565;
+        }
+
+        .related {
+            background-color: #f5f5f5;
+            margin: 1rem;
+            display: flex;
+            color: #111;
+            padding: 0;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 1px -1px rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            text-decoration: none;
+        }
+
+        .related > span {
+            font-weight: 400;
+            margin: 8px;
+        }
+
+        .related:hover {
+            background-color: #ccc;
+        }
+
+        amp-user-notification {
+            padding: 8px;
+            background: #bbb;
+            text-align: center;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- -->
+<main>
+    <div class="heading">
+        <h1>A sample AMP Article</h1>
+        <p id="summary">This is a sample article demonstrating how to write a news article in AMP. It demonstrates the
+            usage of AMP components which works well in news articles. Examples include social sharing, image galleries,
+            personalized content, ads, and more.</p>
+        <p>
+            <small>by Sebastian Benz</small>
+        </p>
+    </div>
+
+    <!-- ## Social Sharing  -->
+
+    <!-- The Social Share extension provides a common interface for share buttons.  Learn more about `amp-social-share` [here](/components/amp-social-share/).  -->
+    <p class="heading">
+        <amp-social-share type="twitter" width="45" height="33"></amp-social-share>
+        <amp-social-share type="facebook" width="45" height="33" data-attribution="254325784911610"></amp-social-share>
+        <amp-social-share type="gplus" width="45" height="33"></amp-social-share>
+        <amp-social-share type="email" width="45" height="33"></amp-social-share>
+        <amp-social-share type="pinterest" width="45" height="33"></amp-social-share>
+    </p>
+
+
+    <p>REuwyVqVRsYDLTbZ;otUeiry,JDidvEsdP3srW#KJH2DYPCiUFUtagqdnG</p>
+    <p>
+        Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis,
+        ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat
+        assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.
+    </p>
+    <p>
+        Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu.
+        Verear contentiones ne quo, no sed consulatu definitionem.
+    </p>
+
+    <figure>
+        <amp-img
+                src="https://i.guim.co.uk/img/media/14970627ad056530f276b52345f4d5aabaf7d589/0_166_4992_2995/4992.jpg?w=700&q=55&auto=format&usm=12&fit=max&s=dbc1ae7ba43ae67bb12e1dcb53d94e7c"
+                width="1280" height="768" layout="responsive"></amp-img>
+        <figcaption>Here is a responsive image.</figcaption>
+    </figure>
+
+    <p>Lorem ipsum dolor sit amet, voluptua oporteat cum cu, eu vix interesset scribentur. Et iudico efficiendi duo, vim
+        an odio iusto reformidans. At maluisset scripserit duo, cum in sumo delenit. Quot erant maiestatis usu ut. Ne
+        mea maiorum vivendum argumentum, tale utinam postea mei in, eam in odio dicta patrioque.</p>
+
+
+    <p>
+        Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis,
+        ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat
+        assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.</p>
+    <p>
+        Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu.
+        Verear contentiones ne quo, no sed consulatu definitionem.
+    </p>
+    <p>
+        Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis,
+        ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat
+        assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.</p>
+    <p>
+        Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu.
+        Verear contentiones ne quo, no sed consulatu definitionem.
+    </p>
+
+    <!-- ## Image Galleries  -->
+    <!-- Use `amp-carousel` for image galleries. Learn more about creating image galleries in AMP [here](/advanced/image_galleries_with_amp-carousel/).  -->
+    <amp-carousel width="1280" height="1000" layout="responsive" type="slides">
+        <figure>
+            <amp-img
+                    src="https://i.guim.co.uk/img/media/3ca20b4b67279bbd16da5e5a1c37b14912f52e85/0_248_7360_4417/master/7360.jpg?w=1920&q=55&auto=format&usm=12&fit=max&s=3328949525554f03b53fc4372f6926a6"
+                    width="1280" height="857" layout="responsive"></amp-img>
+            <figcaption>Each image has a different caption.</figcaption>
+        </figure>
+        <figure>
+            <amp-img
+                    src="https://i.guim.co.uk/img/media/3ca20b4b67279bbd16da5e5a1c37b14912f52e85/0_248_7360_4417/master/7360.jpg?w=1225&q=55&auto=format&usm=12&fit=max&s=8cad6c1f73eb8cbd10bd08df435d3dbc"
+                    width="1280" height="853" layout="responsive"></amp-img>
+            <figcaption>Each image has a different caption.</figcaption>
+        </figure>
+        <figure>
+            <amp-img
+                    src="https://i.guim.co.uk/img/media/3ca20b4b67279bbd16da5e5a1c37b14912f52e85/0_248_7360_4417/master/7360.jpg?w=1065&q=55&auto=format&usm=12&fit=max&s=27b3b11772d7b10147eda3256a7a4ab9"
+                    width="1280" height="853" layout="responsive"></amp-img>
+            <figcaption>Each image has a different caption.</figcaption>
+        </figure>
+    </amp-carousel>
+
+    <p>Lorem ipsum dolor sit amet, voluptua oporteat cum cu, eu vix interesset scribentur. Et iudico efficiendi duo, vim
+        an odio iusto reformidans. At maluisset scripserit duo, cum in sumo delenit. Quot erant maiestatis usu ut. Ne
+        mea maiorum vivendum argumentum, tale utinam postea mei in, eam in odio dicta patrioque.
+    </p>
+    <p>
+        Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis,
+        ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat
+        assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.
+    </p>
+    <p>
+        Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu.
+        Verear contentiones ne quo, no sed consulatu definitionem.
+    </p>
+
+
+    <p>Lorem ipsum dolor sit amet, voluptua oporteat cum cu, eu vix interesset scribentur. Et iudico efficiendi duo, vim
+        an odio iusto reformidans. At maluisset scripserit duo, cum in sumo delenit. Quot erant maiestatis usu ut. Ne
+        mea maiorum vivendum argumentum, tale utinam postea mei in, eam in odio dicta patrioque.
+    </p>
+    <p>
+        Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis,
+        ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat
+        assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.
+    </p>
+    <p>
+        Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu.
+        Verear contentiones ne quo, no sed consulatu definitionem.
+    </p>
+
+
+</main>
+
+
+</body>
+</html>
