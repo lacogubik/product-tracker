@@ -21,6 +21,10 @@
              {:status  200
               :headers {"Content-Type" "text/html"}
               :body    (slurp (io/resource "article.html"))})
+           (GET "/article.html/" []
+             {:status  200
+              :headers {"Content-Type" "text/html"}
+              :body    (slurp (io/resource "article.html"))})
            (GET "/article.amp.html" []
              {:status  200
               :headers {"Content-Type" "text/html"}
