@@ -18,7 +18,6 @@
                       "belyj"                               ;peterburg
                       "borges"                              ;spisy, cela kniznica
                       "canetti"                             ;zaslepeni
-                      "carpentier"                          ;stratene kroky
                       "cigánová"                            ;Aksal, Spaky v trni, Šampanské, káva, pivo
                       "dušek"                               ;Melon sa vzdy smeje
                       "grečner"                             ;Film ako volny vers
