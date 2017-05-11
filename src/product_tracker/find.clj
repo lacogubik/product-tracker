@@ -31,6 +31,7 @@
                       "kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace
                       "kameníček"
                       "kiš"                                 ;hrobka borisa davidovica
+                      "klíma"                               ;Moje šílené století
                       "lem"                                 ;Solaris, a ine
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
