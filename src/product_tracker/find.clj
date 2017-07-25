@@ -53,7 +53,7 @@
                       "strugackij"                          ;Je tazke byt bohom, ine
                       "šimečka"
                       "tallián"                             ;Béla Bartók
-                      "tatarka"                             ;Navrávačky, Písačky pre milovanú Lutéciu, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
+                      "tatarka"                             ;Navrávačky, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "vaculík"                             ;jsme v nebi
                       "velikic"                             ;Severna stena, Vysetrovatel
                       "vilikovský"                          ;Pes na ceste, Letmy sneh, Prva a posledna laska
