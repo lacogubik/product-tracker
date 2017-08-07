@@ -12,7 +12,7 @@
 
 (def wanted-authors #{"albahari"                            ;Snežný človek a ine
                       "andruchovyč"                         ;rekreacie
-                      "alexijevičová"                       ;zinkovy chlapci, vojna nema zensku tvar, modlidba za cernobyl
+                      "alexijevičová"                       ;modlidba za cernobyl
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
                       "belyj"                               ;peterburg
