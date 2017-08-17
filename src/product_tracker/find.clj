@@ -32,7 +32,7 @@
                       "kameníček"
                       "kiš"                                 ;hrobka borisa davidovica
                       "klíma"                               ;Moje šílené století
-                      "lem"                                 ;Solaris, a ine
+                      "lem"                                 ;Solaris
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
@@ -49,8 +49,8 @@
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
-                      "staviarsky"                          ;Zachytka, Clovek prijemny
-                      "strugackij"                          ;Je tazke byt bohom, ine
+                      "staviarsky"                          ;Zachytka, Cesta na Praděd
+                      "strugackij"                          ;Je tazke byt bohom
                       "šimečka"
                       "tallián"                             ;Béla Bartók
                       "tatarka"                             ;Navrávačky, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
