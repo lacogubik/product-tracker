@@ -1,6 +1,6 @@
 (defproject product-tracker "1.0.0-SNAPSHOT"
   :description "FIXME: write description"
-  :url "http://http://cierne-cierne.rhcloud.com/"
+  :url ""
 
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.1.8"]
@@ -19,7 +19,7 @@
   :plugins [[environ/environ.lein "0.2.1"]]
   :hooks [environ.leiningen.hooks]
   :main product-tracker.web
-  :local-repo ~(System/getenv "M2_REPO")
+  ;:local-repo ~(System/getenv "M2_REPO")
   :uberjar-name "product-tracker-standalone.jar"
 
   :profiles {:dev {:env {:environment "dev"}}})
