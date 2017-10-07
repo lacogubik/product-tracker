@@ -6,26 +6,14 @@
             [ring.adapter.jetty :as jetty]
             [environ.core :refer [env]]
             [product-tracker.find :refer [find-wanted]]
-            [product-tracker.notification :as n]
-            [circleci.rollcage.core :as rollcage]))
+            [product-tracker.notification :as n]))
 
-;(def r (rollcage/client (env :rollbar-access-token) {:environment (or (env :environment) "dev")
-;                                                     :host        (env :openshift-app-dns)}))
 
 (defroutes app
            (GET "/" []
              {:status  200
               :headers {"Content-Type" "text/plain"}
               :body    (pr-str (n/send-msg (find-wanted)))})
-           (GET "/article.html/" []
-             {:status  200
-              :headers {"Content-Type" "text/html"}
-              :body    (slurp (io/resource "article.html"))})
-           (GET "/article.amp.html/" []
-             {:status  200
-              :headers {"Content-Type" "text/html"}
-              :body    (slurp (io/resource "article.amp.html"))})
-
            (ANY "*" []
              (route/not-found (slurp (io/resource "404.html")))))
 
@@ -37,19 +25,8 @@
             :headers {"Content-Type" "text/html"}
             :body (slurp (io/resource "500.html"))}))))
 
-(defn wrap-rollbar [handler]
-  (if-not r
-    handler
-    (fn [req]
-      (try
-        (handler req)
-        (catch Exception e
-          (rollcage/error r e (select-keys req [:uri]))
-          (throw e))))))
-
 (defn wrap-app [app]
   (-> app
-      ;wrap-rollbar
       ((if (= "production" (env :environment))
          wrap-error-page
          trace/wrap-stacktrace))))
