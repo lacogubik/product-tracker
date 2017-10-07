@@ -9,8 +9,8 @@
             [product-tracker.notification :as n]
             [circleci.rollcage.core :as rollcage]))
 
-(def r (rollcage/client (env :rollbar-access-token) {:environment (or (env :environment) "dev")
-                                                     :host        (env :openshift-app-dns)}))
+;(def r (rollcage/client (env :rollbar-access-token) {:environment (or (env :environment) "dev")
+;                                                     :host        (env :openshift-app-dns)}))
 
 (defroutes app
            (GET "/" []
@@ -49,15 +49,14 @@
 
 (defn wrap-app [app]
   (-> app
-      wrap-rollbar
+      ;wrap-rollbar
       ((if (= "production" (env :environment))
          wrap-error-page
          trace/wrap-stacktrace))))
 
 
 (defn -main [& args]
-  (let [ip (or (env :openshift-clojure-http-ip) "0.0.0.0")
-        port (-> (env :port)
+  (let [port (-> (env :port)
                  (or "8080")
                  Integer/parseInt)]
     (jetty/run-jetty (wrap-app #'app) {:port port})))
