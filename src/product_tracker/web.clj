@@ -57,7 +57,7 @@
 
 (defn -main [& args]
   (let [ip (or (env :openshift-clojure-http-ip) "0.0.0.0")
-        port (-> (env :openshift-clojure-http-port)
+        port (-> (env :port)
                  (or "8080")
                  Integer/parseInt)]
-    (jetty/run-jetty (wrap-app #'app) {:host ip :port port})))
+    (jetty/run-jetty (wrap-app #'app) {:port port})))
