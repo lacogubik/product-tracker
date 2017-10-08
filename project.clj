@@ -1,6 +1,5 @@
 (defproject product-tracker "1.0.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url ""
+  :url "https://product-tracker.herokuapp.com/"
 
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.1.8"]

@@ -1,6 +1,8 @@
 # Product tracker
 
-Deployed at http://pt-laco.rhcloud.com/
+[ ![Codeship Status for lacogubik/product-tracker](https://app.codeship.com/projects/e1198d90-d61c-0133-1efe-62329e93051f/status?branch=master)](https://app.codeship.com/projects/142709)
+
+Deployed at https://product-tracker.herokuapp.com/
 
 
 ## Usage
@@ -15,10 +17,6 @@ You can run application using
 
 
 
-#Openshift
-
-
-App log is at ``${OPENSHIFT_CLOJURE_DIR}/log/server.log`
 
 
 
