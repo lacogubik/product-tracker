@@ -88,6 +88,7 @@
 
 (defmethod get-book-data :antikvariatik
   [_ page-num]
+  (println "Fetching antikvariatik:" page-num)
   (let [base-url "http://www.antikvariatik.sk/"]
     (-> (str base-url "?podstranka=novinky&zoradenie=&poradie=&start=" (* page-num 50))
         slurp
