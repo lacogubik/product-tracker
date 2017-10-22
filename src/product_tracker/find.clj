@@ -32,6 +32,7 @@
                       "kameníček"
                       "kiš"                                 ;hrobka borisa davidovica
                       "klíma"                               ;Moje šílené století
+                      "lasica"                              ;L&S 1
                       "lem"                                 ;Solaris
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
@@ -46,6 +47,7 @@
                       "rosová"                              ;Male vianoce
                       "sabato"                              ;tunel samoty
                       "saramago"                            ;mesto slepych
+                      "satinský"                            ;L&S 1
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
