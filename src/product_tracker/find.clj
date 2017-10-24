@@ -13,6 +13,7 @@
 (def wanted-authors #{"albahari"                            ;Snežný človek a ine
                       "andruchovyč"                         ;rekreacie
                       "alexijevičová"                       ;modlidba za cernobyl
+                      "aurelius"                            ;Meditace, hovory k sobe
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
                       "belyj"                               ;peterburg
@@ -26,21 +27,25 @@
                       "jakubisko"                           ;Zive striebro
                       "kadlečík"
                       "karous"                              ;Vetřelci a volavky
+                      "kepplová"                            ;Reflux
                       "krajňak"                             ;Carpathia
+                      "králik"                              ;Stručný etymologický slovník slovenčiny
                       "kupka"                               ;Ruská moderna, Ruská avangarda
                       "kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace
                       "kameníček"
                       "kiš"                                 ;hrobka borisa davidovica
                       "klíma"                               ;Moje šílené století
+                      "kompaníková"                         ;Piata loď, Na sutoku
                       "lasica"                              ;L&S 1
                       "lem"                                 ;Solaris
+                      "lyrik"                               ;Naničhodný poet
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
-                      "mitana"                              ;Psie dni
+                      "mitana"                              ;Psie dni, Patagonia
                       "mojžiš"                              ;Voľným okom
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
-                      "pišťanek"
+                      "pišťanek"                            ;Rivers of Babylon
                       "pištalo"                             ;Tesla, portrét medzi maskami
                       "platonov"                            ;cevengur
                       "rakús"                               ;Mačacia krajina
@@ -51,14 +56,17 @@
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
-                      "staviarsky"                          ;Zachytka, Cesta na Praděd
+                      "staviarsky"                          ;Zachytka, Rinaldova cesta
                       "strugackij"                          ;Je tazke byt bohom
                       "šimečka"
+                      "štrpka"                              ;Basne 3
+                      "šulej"                               ;Spolu
                       "tallián"                             ;Béla Bartók
                       "tatarka"                             ;Navrávačky, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
-                      "vaculík"                             ;jsme v nebi
+                      "vaculík"                             ;jsme v nebi, Cesta na Praděd
                       "velikic"                             ;Severna stena, Vysetrovatel
                       "vilikovský"                          ;Pes na ceste, Letmy sneh, Prva a posledna laska
+                      "volker"                              ;Ostende 1936. Léto přátelství
                       "werfel"                              ;Hvězda nenarozených, Barbora neboli zbožnost
                       })
 
