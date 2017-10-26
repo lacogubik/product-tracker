@@ -43,6 +43,7 @@
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
                       "mitana"                              ;Psie dni, Patagonia
+                      "mňačko"                              ;Nocny rozhovor
                       "mojžiš"                              ;Voľným okom
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
                       "pišťanek"                            ;Rivers of Babylon
