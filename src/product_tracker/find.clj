@@ -19,7 +19,7 @@
                       "belyj"                               ;peterburg
                       "borges"                              ;spisy, cela kniznica
                       "canetti"                             ;zaslepeni
-                      "cigánová"                            ;Aksal, Spaky v trni, Šampanské, káva, pivo
+                      "cigánová"                            ;Aksal, Šampanské, káva, pivo
                       "dušek"                               ;Melon sa vzdy smeje
                       "grečner"                             ;Film ako volny vers
                       "hesse"                               ;Cesta do orientu
