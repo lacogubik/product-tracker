@@ -42,7 +42,7 @@
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
-                      "mitana"                              ;Psie dni, Patagonia
+                      "mitana"                              ;Psie dni, Patagonia, Nocne spravy
                       "mňačko"                              ;Nocny rozhovor
                       "mojžiš"                              ;Voľným okom
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
