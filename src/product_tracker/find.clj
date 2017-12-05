@@ -36,14 +36,12 @@
                       "kiš"                                 ;hrobka borisa davidovica
                       "klíma"                               ;Moje šílené století
                       "kompaníková"                         ;Piata loď, Na sutoku
-                      "lasica"                              ;L&S 1
                       "lem"                                 ;Solaris
                       "lyrik"                               ;Naničhodný poet
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
                       "mitana"                              ;Psie dni, Patagonia
-                      "mňačko"                              ;Nocny rozhovor
                       "mojžiš"                              ;Voľným okom
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
                       "pišťanek"                            ;Rivers of Babylon
