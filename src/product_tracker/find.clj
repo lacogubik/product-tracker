@@ -50,8 +50,6 @@
                       "rakús"                               ;Mačacia krajina
                       "rosová"                              ;Male vianoce
                       "sabato"                              ;tunel samoty
-                      "saramago"                            ;mesto slepych
-                      "satinský"                            ;L&S 1
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
