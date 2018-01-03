@@ -54,7 +54,6 @@
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
                       "staviarsky"                          ;Zachytka, Rinaldova cesta
-                      "strugackij"                          ;Je tazke byt bohom
                       "šimečka"
                       "štrpka"                              ;Basne 3
                       "šulej"                               ;Spolu
