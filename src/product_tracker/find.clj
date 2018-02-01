@@ -53,7 +53,7 @@
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
-                      "staviarsky"                          ;Zachytka, Rinaldova cesta
+                      "staviarsky"                          ;Rinaldova cesta
                       "šimečka"
                       "štrpka"                              ;Basne 3
                       "šulej"                               ;Spolu
