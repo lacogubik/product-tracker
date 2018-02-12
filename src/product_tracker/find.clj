@@ -61,7 +61,7 @@
                       "tatarka"                             ;Navrávačky, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "vaculík"                             ;jsme v nebi, Cesta na Praděd
                       "velikic"                             ;Severna stena, Vysetrovatel
-                      "vilikovský"                          ;Pes na ceste, Letmy sneh, Prva a posledna laska
+                      "vilikovský"                          ;Pes na ceste, Prva a posledna laska
                       "volker"                              ;Ostende 1936. Léto přátelství
                       "werfel"                              ;Hvězda nenarozených, Barbora neboli zbožnost
                       })
