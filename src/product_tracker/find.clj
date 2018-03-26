@@ -54,6 +54,7 @@
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
                       "staviarsky"                          ;Rinaldova cesta
+                      "šalamov"                             ; kolymske poviedky, a aj ine
                       "šimečka"
                       "štrpka"                              ;Basne 3
                       "šulej"                               ;Spolu
