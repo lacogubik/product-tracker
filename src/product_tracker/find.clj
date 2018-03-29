@@ -17,11 +17,14 @@
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
                       "belyj"                               ;peterburg
+                      "bene"                                ;korporacio
                       "borges"                              ;spisy, cela kniznica
                       "canetti"                             ;zaslepeni
                       "cigánová"                            ;Aksal, Šampanské, káva, pivo
                       "dušek"                               ;Melon sa vzdy smeje
+                      "glukhovsky"                          ;Poviedky o Rusku
                       "grečner"                             ;Film ako volny vers
+                      "havran"                              ;Analfabet
                       "hesse"                               ;Cesta do orientu
                       "jančar"                              ;Drago, Kateřina, páv a jezuita
                       "jakubisko"                           ;Zive striebro
@@ -31,11 +34,12 @@
                       "krajňak"                             ;Carpathia
                       "králik"                              ;Stručný etymologický slovník slovenčiny
                       "kupka"                               ;Ruská moderna, Ruská avangarda
-                      "kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace
+                      "kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace, Kniha smíchu a zapomnění
                       "kameníček"
                       "kiš"                                 ;hrobka borisa davidovica
                       "klíma"                               ;Moje šílené století
                       "kompaníková"                         ;Piata loď, Na sutoku
+                      "krištúfek"                           ;Tela
                       "lem"                                 ;Solaris
                       "lyrik"                               ;Naničhodný poet
                       "makine"                              ;Francuzky testament
@@ -43,27 +47,37 @@
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
                       "mitana"                              ;Psie dni, Patagonia
                       "mojžiš"                              ;Voľným okom
+                      "montefiore"                          ;Romanovovci 1613-1918
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
+                      "paz"                                 ;Každodenný oheň
                       "pišťanek"                            ;Rivers of Babylon
                       "pištalo"                             ;Tesla, portrét medzi maskami
                       "platonov"                            ;cevengur
                       "rakús"                               ;Mačacia krajina
+                      "rejmer"                              ;Bukurešť. Prach a krev
                       "rosová"                              ;Male vianoce
                       "sabato"                              ;tunel samoty
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
+                      "stasiuk"                             ;Východ (slovenské vydanie)
                       "staviarsky"                          ;Rinaldova cesta
-                      "šalamov"                             ; kolymske poviedky, a aj ine
+                      "sudor"                               ;Fedor Gál. Ešte raz a naposledy. Koniec príbehu
                       "šimečka"
+                      "stach"                               ;Kafka / Rané roky 1883-1911
+                      "štrasser"                            ;Osem vytrvalých
                       "štrpka"                              ;Basne 3
                       "šulej"                               ;Spolu
                       "tallián"                             ;Béla Bartók
                       "tatarka"                             ;Navrávačky, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
+                      "ulická"                              ;Jakubov rebrík
+                      "urc"                                 ;Neviditeľné dejiny dokumentaristov
+                      "ursíny"                              ;Ahoj tato, milý Kubo, 6 x Dežo Ursiny - 2 DVD
+                      "ursiny"
                       "vaculík"                             ;jsme v nebi, Cesta na Praděd
                       "velikic"                             ;Severna stena, Vysetrovatel
                       "vilikovský"                          ;Pes na ceste, Prva a posledna laska
-                      "volker"                              ;Ostende 1936. Léto přátelství
+                      "weidermann"                          ;Ostende 1936. Léto přátelství
                       "werfel"                              ;Hvězda nenarozených, Barbora neboli zbožnost
                       })
 
