@@ -12,7 +12,6 @@
 
 (def wanted-authors #{"albahari"                            ;Snežný človek a ine
                       "andruchovyč"                         ;rekreacie
-                      "alexijevičová"                       ;modlidba za cernobyl
                       "aurelius"                            ;Meditace, hovory k sobe
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
