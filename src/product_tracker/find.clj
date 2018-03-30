@@ -21,6 +21,8 @@
                       "canetti"                             ;zaslepeni
                       "cigánová"                            ;Aksal, Šampanské, káva, pivo
                       "dušek"                               ;Melon sa vzdy smeje
+                      "eco"                                 ;Tajemný plamen královny Loany
+                      "frisch"                              ;Homo Faber
                       "glukhovsky"                          ;Poviedky o Rusku
                       "grečner"                             ;Film ako volny vers
                       "havran"                              ;Analfabet
@@ -44,12 +46,15 @@
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
+                      "mccarthy"                            ;Krvavý poledník aneb Večerní červánky na západě
                       "mitana"                              ;Psie dni, Patagonia
+                      "mišima"                              ;Zlatý pavilon
                       "mojžiš"                              ;Voľným okom
                       "montefiore"                          ;Romanovovci 1613-1918
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
                       "nadas"                               ;Kniha pamati
                       "paz"                                 ;Každodenný oheň
+                      "pamuk"                               ;Jmenuji se Červená
                       "pišťanek"                            ;Rivers of Babylon
                       "pištalo"                             ;Tesla, portrét medzi maskami
                       "platonov"                            ;cevengur
