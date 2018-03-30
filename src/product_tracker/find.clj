@@ -48,6 +48,7 @@
                       "mojžiš"                              ;Voľným okom
                       "montefiore"                          ;Romanovovci 1613-1918
                       "myšľanov"                            ;Sadomaso, fetiš a Tony
+                      "nadas"                               ;Kniha pamati
                       "paz"                                 ;Každodenný oheň
                       "pišťanek"                            ;Rivers of Babylon
                       "pištalo"                             ;Tesla, portrét medzi maskami
@@ -60,6 +61,7 @@
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
                       "stasiuk"                             ;Východ (slovenské vydanie)
+                      "steinbeck"                           ;O mysiach a ludoch
                       "staviarsky"                          ;Rinaldova cesta
                       "sudor"                               ;Fedor Gál. Ešte raz a naposledy. Koniec príbehu
                       "šimečka"
