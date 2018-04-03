@@ -73,7 +73,6 @@
                       "stach"                               ;Kafka / Rané roky 1883-1911
                       "štrasser"                            ;Osem vytrvalých
                       "štrpka"                              ;Basne 3
-                      "šulej"                               ;Spolu
                       "tallián"                             ;Béla Bartók
                       "tatarka"                             ;Navrávačky, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "ulická"                              ;Jakubov rebrík
