@@ -41,7 +41,6 @@
                       "klíma"                               ;Moje šílené století
                       "kompaníková"                         ;Piata loď, Na sutoku
                       "krištúfek"                           ;Tela
-                      "lem"                                 ;Solaris
                       "lyrik"                               ;Naničhodný poet
                       "makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
