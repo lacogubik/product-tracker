@@ -50,7 +50,6 @@
                       "mišima"                              ;Zlatý pavilon
                       "mojžiš"                              ;Voľným okom
                       "montefiore"                          ;Romanovovci 1613-1918
-                      "myšľanov"                            ;Sadomaso, fetiš a Tony
                       "nadas"                               ;Kniha pamati
                       "paz"                                 ;Každodenný oheň
                       "pamuk"                               ;Jmenuji se Červená
@@ -68,12 +67,12 @@
                       "steinbeck"                           ;O mysiach a ludoch
                       "staviarsky"                          ;Rinaldova cesta
                       "sudor"                               ;Fedor Gál. Ešte raz a naposledy. Koniec príbehu
-                      "šimečka"
+                      "šimečka"                             ;Hladanie obav, listy z vazenia
                       "stach"                               ;Kafka / Rané roky 1883-1911
                       "štrasser"                            ;Osem vytrvalých
                       "štrpka"                              ;Basne 3
                       "tallián"                             ;Béla Bartók
-                      "tatarka"                             ;Navrávačky, V ne čase, Listy do večnosti, Sám proti noci, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
+                      "tatarka"                             ;Navrávačky, Listy do večnosti, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "ulická"                              ;Jakubov rebrík
                       "urc"                                 ;Neviditeľné dejiny dokumentaristov
                       "ursíny"                              ;Ahoj tato, milý Kubo, 6 x Dežo Ursiny - 2 DVD
