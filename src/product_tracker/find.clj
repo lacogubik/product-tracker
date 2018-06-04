@@ -17,7 +17,6 @@
                       "baláž"                               ;Posledná pevnosť
                       "belyj"                               ;peterburg
                       "bene"                                ;korporacio
-                      "borges"                              ;spisy, cela kniznica
                       "canetti"                             ;zaslepeni
                       "cigánová"                            ;Aksal, Šampanské, káva, pivo
                       "dušek"                               ;Melon sa vzdy smeje
