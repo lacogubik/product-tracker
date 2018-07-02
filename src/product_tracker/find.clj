@@ -60,7 +60,6 @@
                       "rakús"                               ;Mačacia krajina
                       "rejmer"                              ;Bukurešť. Prach a krev
                       "rosová"                              ;Male vianoce
-                      "sabato"                              ;tunel samoty
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
