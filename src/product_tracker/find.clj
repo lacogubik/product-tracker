@@ -13,6 +13,7 @@
 (def wanted-authors #{"albahari"                            ;Snežný človek a ine
                       "andruchovyč"                         ;rekreacie
                       "aurelius"                            ;Meditace, hovory k sobe
+                      "bacová"                              ;SLOVENSKÝ RODINNÝ DOM 2000 - 2015
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
                       "belyj"                               ;peterburg
