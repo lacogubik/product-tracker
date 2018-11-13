@@ -25,8 +25,7 @@
 
 (s/defn get-data
   [shop :- s/Keyword]
-  (let [{:keys [body status] :as resp} (client/get (get-db-key shop)
-                    {:throw-exceptions false})]
+  (let [{:keys [body status] :as resp} (client/get (get-db-key shop))]
     (log/info resp)
     (when (= 200 status)
       (parse-string body true))))

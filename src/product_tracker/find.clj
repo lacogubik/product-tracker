@@ -101,7 +101,7 @@
 (defmethod get-book-data :cierne-na-bielom
   [_ page-num]
   (println "Fetching cierne " page-num)
-  (let [url "http://www.ciernenabielom.sk/uvod/strana-"]
+  (let [url "https://www.ciernenabielom.sk/uvod/strana-"]
     (-> (str url (inc page-num) "/")
         slurp
         parse
