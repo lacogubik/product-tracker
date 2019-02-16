@@ -52,6 +52,7 @@
                       "mišima"                              ;Zlatý pavilon
                       "mojžiš"                              ;Voľným okom
                       "montefiore"                          ;Romanovovci 1613-1918
+                      "mňačko"                              ;Smrt sa vola Engelchen
                       "nadas"                               ;Kniha pamati
                       "paz"                                 ;Každodenný oheň
                       "pamuk"                               ;Jmenuji se Červená
@@ -72,11 +73,10 @@
                       "stach"                               ;Kafka / Rané roky 1883-1911
                       "štrasser"                            ;Osem vytrvalých
                       "štrpka"                              ;Basne 3
-                      "szablowski"                          ;Vrah z mesta marhul, tancujuce medvede
+                      "szablowski"                          ;Vrah z mesta marhul
                       "tallián"                             ;Béla Bartók
                       "tatarka"                             ;Navrávačky, Listy do večnosti, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
                       "ulická"                              ;Jakubov rebrík
-                      "urban"                               ;Vsem sracum navzdory
                       "urc"                                 ;Neviditeľné dejiny dokumentaristov
                       "ursíny"                              ;Ahoj tato, milý Kubo, 6 x Dežo Ursiny - 2 DVD
                       "ursiny"
@@ -85,7 +85,6 @@
                       "vilikovský"                          ;Pes na ceste, Prva a posledna laska
                       "weidermann"                          ;Ostende 1936. Léto přátelství
                       "werfel"                              ;Hvězda nenarozených, Barbora neboli zbožnost
-                      "zygar"                               ;Vsetci mocny kremla
                       })
 
 (def stop-processing?* (atom false))
