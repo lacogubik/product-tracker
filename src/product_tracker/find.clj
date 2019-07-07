@@ -11,28 +11,39 @@
 
 
 (def wanted-authors #{"albahari"                            ;Snežný človek a ine
+                      "alexijevič"                          ;Poslední svedkovia
                       "andruchovyč"                         ;rekreacie
+                      "åsbrink"                             ;1947
+                      "asbrink"                             ;1947
                       "aurelius"                            ;Meditace, hovory k sobe
                       "bacová"                              ;SLOVENSKÝ RODINNÝ DOM 2000 - 2015
                       "bartošová"                           ;Napriek totalite
                       "baláž"                               ;Posledná pevnosť
-                      "belyj"                               ;peterburg
+                      "bán"                                 ;Slon na Zemplíne
+                      "belyj"                               ;peterburg, Večné volanie
                       "bene"                                ;korporacio
                       "canetti"                             ;zaslepeni
                       "cigánová"                            ;Aksal, Šampanské, káva, pivo
+                      "domoslawski"                         ;Vylúčení
+                      "domosławski"                         ;Vylúčení
                       "dušek"                               ;Melon sa vzdy smeje
                       "eco"                                 ;Tajemný plamen královny Loany
+                      "filimonov"                           ;Andrej Tarkovskij
                       "frisch"                              ;Homo Faber
                       "glukhovsky"                          ;Poviedky o Rusku
                       "grečner"                             ;Film ako volny vers
                       "havran"                              ;Analfabet
                       "hesse"                               ;Cesta do orientu
+                      "herr"                                ;Depese
                       "jančar"                              ;Drago, Kateřina, páv a jezuita
                       "jakubisko"                           ;Zive striebro
-                      "kadlečík"
+                      "kadlečík"                            ;Z rečí v nížinách - Tváre a oslovenia - Epištoly
+                      "kapuściński"                         ;eben
+                      "kapuscinski"                         ;eben
                       "karous"                              ;Vetřelci a volavky
                       "kepplová"                            ;Reflux
                       "králik"                              ;Stručný etymologický slovník slovenčiny
+                      "krastev"                             ;Čo príde po Európe?
                       "kupka"                               ;Ruská moderna, Ruská avangarda
                       "kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace, Kniha smíchu a zapomnění
                       "kuznial"                             ;Papusa
@@ -41,6 +52,9 @@
                       "klíma"                               ;Moje šílené století (1. 2.), Soudce z milosti (Stojí, stojí šibenička)
                       "kompaníková"                         ;Piata loď, Na sutoku
                       "krištúfek"                           ;Tela
+                      "kryštopa"                            ;Ukrajina v měřítku 1:1
+                      "kuźniak"                             ;Papusa
+                      "kuzniak"                             ;Papusa
                       "lem"                                 ; Pribehy pilota pirxe
                       "lyrik"                               ;Naničhodný poet
                       "makine"                              ;Francuzky testament
@@ -53,6 +67,7 @@
                       "montefiore"                          ;Romanovovci 1613-1918
                       "mňačko"                              ;Smrt sa vola Engelchen
                       "nadas"                               ;Kniha pamati
+                      "osorgin"                             ;Příběh jedné moskevské ulice
                       "paz"                                 ;Každodenný oheň
                       "pamuk"                               ;Jmenuji se Červená
                       "pišťanek"                            ;Rivers of Babylon
@@ -61,13 +76,17 @@
                       "rakús"                               ;Mačacia krajina
                       "rejmer"                              ;Bukurešť. Prach a krev
                       "rosová"                              ;Male vianoce
+                      "satinský"                            ;Gundžovníky
+                      "seierstad"                           ;Kníhkupec z Kábulu
                       "singer"                              ;kejklir z lubliny
                       "sloboda"
                       "solženicyn"                          ;polostrov gulag
-                      "stasiuk"                             ;Východ (slovenské vydanie)
+                      "stasiuk"                             ;Východ
                       "steinbeck"                           ;O mysiach a ludoch
                       "staviarsky"                          ;Rinaldova cesta
+                      "stravinski"                          ;Hudobná poetika. Kronika môjho života
                       "sudor"                               ;Fedor Gál. Ešte raz a naposledy. Koniec príbehu
+                      "ščeblykin"                           ;Jsme jako oni - Rozhovor s Martinem M. Šimečkou o liberálech, pokrytcích a fašistech
                       "šimečka"                             ;Hladanie obav, listy z vazenia
                       "stach"                               ;Kafka / Rané roky 1883-1911
                       "štrasser"                            ;Osem vytrvalých
@@ -84,6 +103,7 @@
                       "vilikovský"                          ;Pes na ceste
                       "weidermann"                          ;Ostende 1936. Léto přátelství
                       "werfel"                              ;Hvězda nenarozených, Barbora neboli zbožnost
+                      "zajíček"                             ;Jsme jako oni - Rozhovor s Martinem M. Šimečkou o liberálech, pokrytcích a fašistech
                       })
 
 (def stop-processing?* (atom false))
