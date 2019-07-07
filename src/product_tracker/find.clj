@@ -32,14 +32,13 @@
                       "kadlečík"
                       "karous"                              ;Vetřelci a volavky
                       "kepplová"                            ;Reflux
-                      "krajňak"                             ;Carpathia
                       "králik"                              ;Stručný etymologický slovník slovenčiny
                       "kupka"                               ;Ruská moderna, Ruská avangarda
                       "kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace, Kniha smíchu a zapomnění
                       "kuznial"                             ;Papusa
                       "kameníček"
                       "kiš"                                 ;hrobka borisa davidovica
-                      "klíma"                               ;Moje šílené století
+                      "klíma"                               ;Moje šílené století (1. 2.), Soudce z milosti (Stojí, stojí šibenička)
                       "kompaníková"                         ;Piata loď, Na sutoku
                       "krištúfek"                           ;Tela
                       "lem"                                 ; Pribehy pilota pirxe
@@ -82,7 +81,7 @@
                       "ursiny"
                       "vaculík"                             ;jsme v nebi, Cesta na Praděd
                       "velikic"                             ;Severna stena, Vysetrovatel
-                      "vilikovský"                          ;Pes na ceste, Prva a posledna laska
+                      "vilikovský"                          ;Pes na ceste
                       "weidermann"                          ;Ostende 1936. Léto přátelství
                       "werfel"                              ;Hvězda nenarozených, Barbora neboli zbožnost
                       })
@@ -100,7 +99,9 @@
 (defmethod get-book-data :cierne-na-bielom
   [_ page-num]
   (println "Fetching cierne " page-num)
-  (let [url "https://www.ciernenabielom.sk/uvod/strana-"]
+  (let [base-url "https://www.ciernenabielom.sk/"
+        url (str base-url "uvod/strana-")]
+    (Thread/sleep (* 200 (inc (rand-int 5))))
     (-> (str url (inc page-num) "/")
         slurp
         parse
@@ -110,8 +111,12 @@
                                (-> item
                                    text
                                    second))
-                      "h2 a.nazov" (attr :href)
-                      ".foot-img-cont a" (attr :href)))))
+                      "h2 a.nazov" (fn [m]
+                                     (->> (attr m :href)
+                                          (str base-url)))
+                      ".foot-img-cont a" (fn [m]
+                                           (->> (attr m :href)
+                                                (str  base-url)))))))
 
 (defmethod get-book-data :antikvariatik
   [_ page-num]
@@ -148,10 +153,22 @@
   (reset! stop-processing?* false)
   (reduce (partial filter-old-books last-item) '() new-col))
 
+(defn filter-authors [books]
+  (filter (fn [book]
+            (when-let [author (:author book)]
+              (try
+                (contains? wanted-authors (-> author
+                                              (string/split #" ")
+                                              first
+                                              string/lower-case))
+
+                (catch Exception e
+                  nil)))) books))
+
 
 (defn find-wanted
   []
-  (flatten (for [shop [:cierne-na-bielom :antikvariatik]]
+  (flatten (for [shop [:cierne-na-bielom #_:antikvariatik]]
              (let [recent-books (get-latest shop)
                    latest-books (get-last-batch
                                   (db/get-data shop)
@@ -159,9 +176,4 @@
                (log/info "Latest books:")
                (clojure.pprint/pprint latest-books)
                (db/store-data shop (first recent-books))
-               (filter (fn [book]
-                         (when-let [author (:author book)]
-                           (contains? wanted-authors (-> author
-                                                         (string/split #" ")
-                                                         first
-                                                         string/lower-case)))) latest-books)))))
+               (filter-authors latest-books)))))
