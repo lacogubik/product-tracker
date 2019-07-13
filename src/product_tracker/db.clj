@@ -22,6 +22,6 @@
 (defn get-data
   [shop]
   (let [{:keys [body status] :as resp} (client/get (get-db-key shop))]
-    (log/info resp)
+    (log/infof "%s, %s" status body)
     (when (= 200 status)
       (parse-string body true))))

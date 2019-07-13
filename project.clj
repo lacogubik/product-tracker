@@ -7,6 +7,7 @@
                  [com.taoensso/timbre "4.10.0"]
                  [environ "1.1.0"]
                  [hiccup "1.0.5"]
+                 [org.apache.commons/commons-lang3 "3.9"]
                  [raven-clj "1.5.2"]
                  [reaver "0.1.2"]
                  [ring "1.7.1"]]

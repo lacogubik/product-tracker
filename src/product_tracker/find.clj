@@ -1,24 +1,28 @@
 (ns product-tracker.find
   (:require
-    [clojure.string :as string]
+    [clojure.string :as str]
+    [product-tracker.airtable :as air]
     [product-tracker.db :as db]
     [reaver :refer [parse extract-from text attr edn]]
     [taoensso.timbre :as log]))
 
 (def page-batch 2)
 
-(def wanted-authors #{"albahari"                            ;Snežný človek a ine
-                      "alexijevič"                          ;Poslední svedkovia
-                      "andruchovyč"                         ;rekreacie
-                      "åsbrink"                             ;1947
-                      "asbrink"                             ;1947
-                      "aurelius"                            ;Meditace, hovory k sobe
-                      "bacová"                              ;SLOVENSKÝ RODINNÝ DOM 2000 - 2015
-                      "bartošová"                           ;Napriek totalite
-                      "baláž"                               ;Posledná pevnosť
-                      "bán"                                 ;Slon na Zemplíne
-                      "belyj"                               ;peterburg, Večné volanie
-                      "bene"                                ;korporacio
+(defn strip-accents [s]
+  (org.apache.commons.lang3.StringUtils/stripAccents s))
+
+(def wanted-authors #{
+                      ;"alexijevič"                          ;Poslední svedkovia
+                      ;"andruchovyč"                         ;rekreacie
+                      ;"åsbrink"                             ;1947
+                      ;"asbrink"                             ;1947
+                      ;"aurelius"                            ;Meditace, hovory k sobe
+                      ;"bacová"                              ;SLOVENSKÝ RODINNÝ DOM 2000 - 2015
+                      ;"bartošová"                           ;Napriek totalite
+                      ;"baláž"                               ;Posledná pevnosť
+                      ;"bán"                                 ;Slon na Zemplíne
+                      ;"belyj"                               ;peterburg, Večné volanie
+                      ;"bene"                                ;korporacio
                       "canetti"                             ;zaslepeni
                       "cigánová"                            ;Aksal, Šampanské, káva, pivo
                       "domoslawski"                         ;Vylúčení
@@ -103,6 +107,12 @@
                       "zajíček"                             ;Jsme jako oni - Rozhovor s Martinem M. Šimečkou o liberálech, pokrytcích a fašistech
                       })
 
+(defn wanted-authors []
+  (->>
+    (air/list-records air/base-id air/authors-table)
+    (map (comp str/lower-case strip-accents :Surname :fields))
+    set))
+
 (def stop-processing?* (atom false))
 
 (defn pprint-map->
@@ -132,7 +142,7 @@
                                           (str base-url)))
                       ".foot-img-cont a" (fn [m]
                                            (->> (attr m :href)
-                                                (str  base-url)))))))
+                                                (str base-url)))))))
 
 (defmethod get-book-data :antikvariatik
   [_ page-num]
@@ -169,14 +179,15 @@
   (reset! stop-processing?* false)
   (reduce (partial filter-old-books last-item) '() new-col))
 
-(defn filter-authors [books]
+(defn filter-authors [wanted-authors books]
   (filter (fn [book]
             (when-let [author (:author book)]
               (try
                 (contains? wanted-authors (-> author
-                                              (string/split #" ")
+                                              (str/split #" ")
                                               first
-                                              string/lower-case))
+                                              strip-accents
+                                              str/lower-case))
 
                 (catch Exception e
                   nil)))) books))
@@ -190,4 +201,4 @@
                (log/info "Latest books:")
                (clojure.pprint/pprint latest-books)
                (db/store-data shop (first recent-books))
-               (filter-authors latest-books)))))
+               (filter-authors (wanted-authors) latest-books)))))
