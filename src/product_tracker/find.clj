@@ -1,14 +1,11 @@
 (ns product-tracker.find
-  (:require [reaver :refer [parse extract-from text attr edn]]
-            [clojure.string :as string]
-            [taoensso.timbre :as log]
-            [schema.core :as s]
-            [product-tracker.schema :as sch]
-            [product-tracker.db :as db]))
-
+  (:require
+    [clojure.string :as string]
+    [product-tracker.db :as db]
+    [reaver :refer [parse extract-from text attr edn]]
+    [taoensso.timbre :as log]))
 
 (def page-batch 2)
-
 
 (def wanted-authors #{"albahari"                            ;Snežný človek a ine
                       "alexijevič"                          ;Poslední svedkovia
@@ -108,7 +105,6 @@
 
 (def stop-processing?* (atom false))
 
-
 (defn pprint-map->
   [m]
   (clojure.pprint/pprint m)
@@ -154,8 +150,8 @@
                       "div.index_obsah_vnutri_kniha_obrazok a img" (attr :src)))))
 
 
-(s/defn get-latest :- [sch/Book]
-  [shop :- s/Keyword]
+(defn get-latest
+  [shop]
   (flatten (for [n (range page-batch)]
              (get-book-data shop n))))
 
@@ -185,9 +181,7 @@
                 (catch Exception e
                   nil)))) books))
 
-
-(defn find-wanted
-  []
+(defn find-wanted []
   (flatten (for [shop [:cierne-na-bielom #_:antikvariatik]]
              (let [recent-books (get-latest shop)
                    latest-books (get-last-batch

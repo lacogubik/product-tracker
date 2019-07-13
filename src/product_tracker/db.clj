@@ -1,30 +1,26 @@
 (ns product-tracker.db
-  (:require [cheshire.core :refer [generate-string parse-string]]
-            [clj-http.client :as client]
-            [schema.core :as s]
-            [taoensso.timbre :as log]
-            [product-tracker.schema :as sch]
-            [environ.core :refer [env]]))
-
+  (:require
+    [cheshire.core :refer [generate-string parse-string]]
+    [clj-http.client :as client]
+    [environ.core :refer [env]]
+    [taoensso.timbre :as log]))
 
 (def db-uri (env :db-uri))
 
-(s/defn get-db-key
-        [shop :- s/Keyword]
-        (str db-uri (name shop) ".json"))
+(defn get-db-key [shop]
+  (str db-uri (name shop) ".json"))
 
-(s/defn store-data
-  [shop :- s/Keyword
-   data :- sch/Book]
+(defn store-data
+  [shop data]
   (log/info "Storing  shop:" shop " data:" data)
   (let [{:keys [body status] :as resp} (client/put (get-db-key shop)
-                                          {:content-type :json
-                                           :body         (generate-string data)})]
+                                                   {:content-type :json
+                                                    :body         (generate-string data)})]
     (when (> status 399)
       (log/warn resp))))
 
-(s/defn get-data
-  [shop :- s/Keyword]
+(defn get-data
+  [shop]
   (let [{:keys [body status] :as resp} (client/get (get-db-key shop))]
     (log/info resp)
     (when (= 200 status)
