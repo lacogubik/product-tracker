@@ -23,66 +23,66 @@
                       ;"bán"                                 ;Slon na Zemplíne
                       ;"belyj"                               ;peterburg, Večné volanie
                       ;"bene"                                ;korporacio
-                      "canetti"                             ;zaslepeni
-                      "cigánová"                            ;Aksal, Šampanské, káva, pivo
-                      "domoslawski"                         ;Vylúčení
-                      "domosławski"                         ;Vylúčení
-                      "dušek"                               ;Melon sa vzdy smeje
-                      "eco"                                 ;Tajemný plamen královny Loany
-                      "filimonov"                           ;Andrej Tarkovskij
-                      "frisch"                              ;Homo Faber
-                      "glukhovsky"                          ;Poviedky o Rusku
-                      "grečner"                             ;Film ako volny vers
-                      "havran"                              ;Analfabet
-                      "hesse"                               ;Cesta do orientu
-                      "herr"                                ;Depese
-                      "jančar"                              ;Drago, Kateřina, páv a jezuita
-                      "jakubisko"                           ;Zive striebro
-                      "kadlečík"                            ;Z rečí v nížinách - Tváre a oslovenia - Epištoly
-                      "kapuściński"                         ;eben
-                      "kapuscinski"                         ;eben
-                      "karous"                              ;Vetřelci a volavky
-                      "kepplová"                            ;Reflux
-                      "králik"                              ;Stručný etymologický slovník slovenčiny
-                      "krastev"                             ;Čo príde po Európe?
-                      "kupka"                               ;Ruská moderna, Ruská avangarda
-                      "kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace, Kniha smíchu a zapomnění
-                      "kuznial"                             ;Papusa
+                      ;"canetti"                             ;zaslepeni
+                      ;"cigánová"                            ;Aksal, Šampanské, káva, pivo
+                      ;"domoslawski"                         ;Vylúčení
+                      ;"domosławski"                         ;Vylúčení
+                      ;"dušek"                               ;Melon sa vzdy smeje
+                      ;"eco"                                 ;Tajemný plamen královny Loany
+                      ;"filimonov"                           ;Andrej Tarkovskij
+                      ;"frisch"                              ;Homo Faber
+                      ;"glukhovsky"                          ;Poviedky o Rusku
+                      ;"grečner"                             ;Film ako volny vers
+                      ;"havran"                              ;Analfabet
+                      ;"hesse"                               ;Cesta do orientu
+                      ;"herr"                                ;Depese
+                      ;"jančar"                              ;Drago, Kateřina, páv a jezuita
+                      ;"jakubisko"                           ;Zive striebro
+                      ;"kadlečík"                            ;Z rečí v nížinách - Tváre a oslovenia - Epištoly
+                      ;"kapuściński"                         ;eben
+                      ;"kapuscinski"                         ;eben
+                      ;"karous"                              ;Vetřelci a volavky
+                      ;"kepplová"                            ;Reflux
+                      ;"králik"                              ;Stručný etymologický slovník slovenčiny
+                      ;"krastev"                             ;Čo príde po Európe?
+                      ;"kupka"                               ;Ruská moderna, Ruská avangarda
+                      ;"kundera"                             ;Nesmrtelnost, Ptákovina, Směšné lásky, O hudbě a románu, Zahradou těch, které mám rád, Slova, pojmy, situace, Kniha smíchu a zapomnění
+                      ;"kuznial"                             ;Papusa
                       "kameníček"
-                      "kiš"                                 ;hrobka borisa davidovica
-                      "klíma"                               ;Moje šílené století (1. 2.), Soudce z milosti (Stojí, stojí šibenička)
-                      "kompaníková"                         ;Piata loď, Na sutoku
-                      "krištúfek"                           ;Tela
-                      "kryštopa"                            ;Ukrajina v měřítku 1:1
-                      "kuźniak"                             ;Papusa
-                      "kuzniak"                             ;Papusa
-                      "lem"                                 ; Pribehy pilota pirxe
-                      "lyrik"                               ;Naničhodný poet
-                      "makine"                              ;Francuzky testament
+                      ;"kiš"                                 ;hrobka borisa davidovica
+                      ;"klíma"                               ;Moje šílené století (1. 2.), Soudce z milosti (Stojí, stojí šibenička)
+                      ;"kompaníková"                         ;Piata loď, Na sutoku
+                      ;"krištúfek"                           ;Tela
+                      ;"kryštopa"                            ;Ukrajina v měřítku 1:1
+                      ;"kuźniak"                             ;Papusa
+                      ;"kuzniak"                             ;Papusa
+                      ;"lem"                                 ; Pribehy pilota pirxe
+                      ;"lyrik"                               ;Naničhodný poet
+                      ;"makine"                              ;Francuzky testament
                       "mathé"                               ;Ján Mathé. Hľadač dobra
                       "matuštík"                            ;Ján Mathé. Hľadač dobra
-                      "mccarthy"                            ;Krvavý poledník aneb Večerní červánky na západě
-                      "mitana"                              ;Psie dni, Patagonia
-                      "mišima"                              ;Zlatý pavilon
-                      "mojžiš"                              ;Voľným okom
-                      "montefiore"                          ;Romanovovci 1613-1918
-                      "mňačko"                              ;Smrt sa vola Engelchen
-                      "nadas"                               ;Kniha pamati
-                      "osorgin"                             ;Příběh jedné moskevské ulice
-                      "paz"                                 ;Každodenný oheň
-                      "pamuk"                               ;Jmenuji se Červená
-                      "pišťanek"                            ;Rivers of Babylon
+                      ;"mccarthy"                            ;Krvavý poledník aneb Večerní červánky na západě
+                      ;"mitana"                              ;Psie dni, Patagonia
+                      ;"mišima"                              ;Zlatý pavilon
+                      ;"mojžiš"                              ;Voľným okom
+                      ;"montefiore"                          ;Romanovovci 1613-1918
+                      ;"mňačko"                              ;Smrt sa vola Engelchen
+                      ;"nadas"                               ;Kniha pamati
+                      ;"osorgin"                             ;Příběh jedné moskevské ulice
+                      ;"paz"                                 ;Každodenný oheň
+                      ;"pamuk"                               ;Jmenuji se Červená
+                      ;"pišťanek"                            ;Rivers of Babylon
                       "pištalo"                             ;Tesla, portrét medzi maskami
-                      "platonov"                            ;cevengur
-                      "rakús"                               ;Mačacia krajina
+                      ;"platonov"                            ;cevengur
+                      ;"rakús"                               ;Mačacia krajina
                       "rejmer"                              ;Bukurešť. Prach a krev
                       "rosová"                              ;Male vianoce
                       "satinský"                            ;Gundžovníky
-                      "seierstad"                           ;Kníhkupec z Kábulu
-                      "singer"                              ;kejklir z lubliny
-                      "sloboda"
-                      "solženicyn"                          ;polostrov gulag
-                      "stasiuk"                             ;Východ
+                      ;"seierstad"                           ;Kníhkupec z Kábulu
+                      ;"singer"                              ;kejklir z lubliny
+                      ;"sloboda"
+                      ;"solženicyn"                          ;polostrov gulag
+                      ;"stasiuk"                             ;Východ
                       "steinbeck"                           ;O mysiach a ludoch
                       "staviarsky"                          ;Rinaldova cesta
                       "stravinski"                          ;Hudobná poetika. Kronika môjho života
@@ -92,16 +92,16 @@
                       "stach"                               ;Kafka / Rané roky 1883-1911
                       "štrasser"                            ;Osem vytrvalých
                       "štrpka"                              ;Basne 3
-                      "szablowski"                          ;Vrah z mesta marhul
+                      ;"szablowski"                          ;Vrah z mesta marhul
                       "tallián"                             ;Béla Bartók
-                      "tatarka"                             ;Navrávačky, Listy do večnosti, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
-                      "ulická"                              ;Jakubov rebrík
+                      ;"tatarka"                             ;Navrávačky, Listy do večnosti, Neslovný príbeh, Hovory o kultúre a obcovaní, Kultúra ako obcovanie
+                      ;  "ulická"                              ;Jakubov rebrík
                       "urc"                                 ;Neviditeľné dejiny dokumentaristov
                       "ursíny"                              ;Ahoj tato, milý Kubo, 6 x Dežo Ursiny - 2 DVD
                       "ursiny"
-                      "vaculík"                             ;jsme v nebi, Cesta na Praděd
-                      "velikic"                             ;Severna stena, Vysetrovatel
-                      "vilikovský"                          ;Pes na ceste
+                      ;"vaculík"                             ;jsme v nebi, Cesta na Praděd
+                      ;"velikic"                             ;Severna stena, Vysetrovatel
+                      ;"vilikovský"                          ;Pes na ceste
                       "weidermann"                          ;Ostende 1936. Léto přátelství
                       "werfel"                              ;Hvězda nenarozených, Barbora neboli zbožnost
                       "zajíček"                             ;Jsme jako oni - Rozhovor s Martinem M. Šimečkou o liberálech, pokrytcích a fašistech
@@ -110,7 +110,9 @@
 (defn wanted-authors []
   (->>
     (air/list-records air/base-id air/authors-table)
-    (map (comp str/lower-case strip-accents :Surname :fields))
+    (map (comp :Surname :fields))
+    (remove str/blank?)
+    (map (comp str/lower-case strip-accents))
     set))
 
 (def stop-processing?* (atom false))
@@ -131,18 +133,16 @@
     (-> (str url (inc page-num) "/")
         slurp
         parse
-        (extract-from ".foot-line" [:title :author :url :img-url]
-                      "h2 a.nazov" text
-                      "h2 a" (fn [item]
-                               (-> item
-                                   text
-                                   second))
-                      "h2 a.nazov" (fn [m]
-                                     (->> (attr m :href)
-                                          (str base-url)))
-                      ".foot-img-cont a" (fn [m]
-                                           (->> (attr m :href)
-                                                (str base-url)))))))
+        (extract-from ".produkt" [:title :author :url :img-url]
+                      ".info a h2" text
+                      ".info h3 a" text
+                      ".info a" (fn [m]
+                                  (->>
+                                    (attr (first m) :href)
+                                    (str base-url)))
+                      ".foto a" (fn [m]
+                                  (->> (attr m :href)
+                                       (str base-url)))))))
 
 (defmethod get-book-data :antikvariatik
   [_ page-num]
