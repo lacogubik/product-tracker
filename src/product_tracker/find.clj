@@ -13,7 +13,7 @@
 
 (defn wanted-authors []
   (->>
-    (air/list-records air/base-id air/authors-table)
+    (air/list-records air/authors-table)
     (map (comp :Surname :fields))
     (remove str/blank?)
     (map (comp str/lower-case strip-accents))
@@ -94,15 +94,16 @@
                 (catch Exception e
                   nil)))) books))
 
+
 (defn find-wanted []
   (flatten (for [shop [:cierne-na-bielom #_:antikvariatik]]
              (let [recent-books (get-latest shop)
                    latest-books (get-last-batch
-                                  (db/get-data shop)
+                                  (air/get-latest-shop-state shop)
                                   recent-books)]
                (when-not (seq recent-books)
                  (log/error "No books fetched, maybe layout has changed"))
                (log/info "Latest books:")
                (clojure.pprint/pprint latest-books)
-               (db/store-data shop (first recent-books))
+               (air/store-shop-state shop (first recent-books))
                (filter-authors (wanted-authors) latest-books)))))
