@@ -2,7 +2,6 @@
   (:require
     [clojure.string :as str]
     [product-tracker.airtable :as air]
-    [product-tracker.db :as db]
     [reaver :refer [parse extract-from text attr edn]]
     [taoensso.timbre :as log]))
 
