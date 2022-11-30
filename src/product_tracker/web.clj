@@ -2,10 +2,12 @@
   (:require
     [environ.core :refer [env]]
     [product-tracker.find :refer [find-wanted]]
+    [product-tracker.batch-search :refer [scan-search]]
     [product-tracker.notification :as n]
     [raven-clj.ring :as rvn]
     [ring.adapter.jetty :as jetty]
     [ring.middleware.stacktrace :as trace]
+    [ring.middleware.params :as ring-params]
     [taoensso.timbre :as log]
     [taoensso.timbre.appenders.3rd-party.sentry :as sentry]))
 
@@ -13,13 +15,19 @@
 
 (log/merge-config! {:appenders {:sentry (sentry/sentry-appender sentry-dsn {})}})
 
-(defn handler [_request]
+(defn process-request [params]
+  (if-let [shop (get params "scan")]
+    (scan-search (keyword shop))
+    (n/send-msg (find-wanted))))
+
+(defn handler [{params :params}]
   {:status 200
    :headers {"Content-Type" "text/plain"}
-   :body (pr-str (n/send-msg (find-wanted)))})
+   :body (pr-str (process-request params))})
 
 (defn wrap-app [app]
   (-> app
+      (ring-params/wrap-params)
       (rvn/wrap-sentry sentry-dsn {})
       (trace/wrap-stacktrace)))
 
