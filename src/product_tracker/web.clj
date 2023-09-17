@@ -9,21 +9,65 @@
     [ring.middleware.stacktrace :as trace]
     [ring.middleware.params :as ring-params]
     [taoensso.timbre :as log]
-    [taoensso.timbre.appenders.3rd-party.sentry :as sentry]))
+    [taoensso.timbre.appenders.3rd-party.sentry :as sentry]
+    [hiccup.core :as h]
+    [clojure.string :as str]))
 
 (def sentry-dsn (env :sentry-dsn))
 
 (log/merge-config! {:appenders {:sentry (sentry/sentry-appender sentry-dsn {})}})
 
+(defn gen-prices [price]
+  (log/debugf "price split: %s" (str/split price #"K"))
+  (log/debugf "first: %s" (str/trim (first (str/split price #"K"))))
+  (let [czk-value (Integer/parseInt (str/trim (first (str/split price #"K"))))]
+    (str (/ czk-value 24) "€ (" price ")")))
+
+(defn mark-row [book wanted-books]
+  (cond
+    (or (contains? (set (map str/lower-case wanted-books)) "anything")
+        (seq (filter #(< % 0.1) (:scores book)))) "success"
+    (seq (filter #(< % 0.4) (:scores book))) "warning"
+    :else ""))
+
+(defn gen-table [sq]
+  (log/debugf "number of rows: %s" (first sq))
+  (h/html
+    [:div
+     [:meta {:charset "utf-8"}]
+     [:link {:rel "stylesheet" :href "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"}]
+     [:div.container
+      [:div.row
+       [:div
+        [:h2 (str "Found books for " (count (filter #(seq (:books %)) sq)) " authors (total " (count sq) ")")] ]
+       [:div {:class ""}
+        (for [entry sq]
+          (when (seq (:books entry))
+          ;  (log/debugf "table entry: %s" entry)
+            [:div
+             [:h4 (str/capitalize (:author entry))]
+             [:h5 (str/join ", " (:wanted-books entry))]
+             [:table {:class "table"}
+              [:tr [:th "Book"] [:th "Scores"] [:th "Price"]]
+              (for [book (sort-by :title (:books entry))]
+                [:tr {:class (mark-row book (:wanted-books entry))}
+                 [:td [:a {:href (:url book)} (:title book)]]
+                 [:td (str/join ", " (map #(format "%.2f" % ) (:scores book)))]
+                 [:td (:price book)]
+                 (when (:vendor book)
+                   [:td (:vendor book)])])]]
+            )
+          )]]]]))
+
 (defn process-request [params]
   (if-let [shop (get params "scan")]
-    (scan-search (keyword shop))
-    (n/send-msg (find-wanted))))
+    (gen-table (scan-search (keyword shop)))
+    (pr-str (n/send-msg (find-wanted)))))
 
 (defn handler [{params :params}]
-  {:status 200
-   :headers {"Content-Type" "text/plain"}
-   :body (pr-str (process-request params))})
+  {:status  200
+   :headers {"Content-Type" "text/html"}
+   :body    (process-request params)})
 
 (defn wrap-app [app]
   (-> app

@@ -25,7 +25,7 @@
                  {:basic-auth  mail-key
                   :form-params {:from    (str "Poduct tracker Notif <postmaster@" mail-domain ">")
                                 :to      (str "<" mail-to ">")
-                                :subject (str (count books) " new - " (apply str (interpose ", " (map :author books))))
+                                :subject (str (apply str (interpose ", " (map :author books))))
                                 :html    (format-email books)}})))
 
 (defn post-to-slack
@@ -53,5 +53,6 @@
   [books]
   (when (seq books)
     (send-email books)
-    (send-slack books))
+    ;(send-slack books)
+    )
   books)
